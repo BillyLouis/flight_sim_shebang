@@ -1,0 +1,1 @@
+All UX/UI interfaces (XAML Dashboard, C++ & C# Joystick code, mechanical chair)
