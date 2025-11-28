@@ -1,6 +1,6 @@
 # flight_sim_shebang
 WPF Flight Simulator with Drone integration.
-The flight simulator also guides the drone and all movent of the drone is felt in the simulator's cockpit as if the pilot|gamer is inside the drone.
+The flight simulator also guides the drone and all movement of the drone is felt in the simulator's cockpit as if the pilot|gamer is inside the drone.
 
 
 ### Main window:
