@@ -1,0 +1,153 @@
+﻿<Window x:Class="HomePage.DashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomePage"
+        mc:Ignorable="d"
+        Title="DashboardWindow" Height="777" Width="1126">
+    <Grid Margin="23,0,23,8">
+        <!-- Background Image -->
+        <!--
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF4B4646" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image x:Name="LaunchPage" HorizontalAlignment="Center" Height="743" VerticalAlignment="Top" Width="1214" Source="/Home_Page.png" Margin="0,10,0,0"/>
+         -->
+
+        <Button x:Name="btnStartDashboardButton" Content="Cam | Simulator Feed" HorizontalAlignment="Left" Height="39" Margin="723,35,0,0" VerticalAlignment="Top" Width="320" Opacity="0.7" Foreground="#FFF1EFE7" FontSize="24" FontWeight="Normal" Click="btnStartDashboard_Click" FontFamily="Comic Sans MS">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFDE3F3F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFE0C02D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC17171" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+        <!--
+        <MediaElement Name="cameraFeed" HorizontalAlignment="Left" VerticalAlignment="Top" Width="620" Height="516" Margin="494,60,0,0"/>
+        
+        <MediaElement x:Name="cameraFeed" HorizontalAlignment="Left" VerticalAlignment="Top" Width="620" Height="510" Stretch="UniformToFill" Margin="509,76,0,0"/>
+        
+        <Image Name="CameraImage" Margin="771,182,203,154"/>
+        
+        <Image Name="ImageDisplay" Margin="255,162,741,162"/>
+-->
+        <Button x:Name="btnErrorCleanup" Content="Clear Error Tabs" HorizontalAlignment="Left" Height="39" Margin="723,101,0,0" VerticalAlignment="Top" Width="320" Opacity="0.7" Foreground="#FFF1EFE7" FontSize="24" FontWeight="Normal" Click="btnErrorCleanUp_Click" FontFamily="Comic Sans MS">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFDE3F3F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFE0C02D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC17171" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnStartDashboardButton_Copy1" Content="Other 1" HorizontalAlignment="Left" Height="39" Margin="723,167,0,0" VerticalAlignment="Top" Width="320" Opacity="0.7" Foreground="#FFF1EFE7" FontSize="24" FontWeight="Normal" Click="btnStartDashboard_Click" FontFamily="Comic Sans MS">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFDE3F3F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFE0C02D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC17171" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="btnStartDashboardButton_Copy2" Content="Other 2" HorizontalAlignment="Left" Height="39" Margin="723,233,0,0" VerticalAlignment="Top" Width="320" Opacity="0.7" Foreground="#FFF1EFE7" FontSize="24" FontWeight="Normal" Click="btnStartDashboard_Click" FontFamily="Comic Sans MS">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFDE3F3F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.OpacityMask>
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFE0C02D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC17171" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Image Name="imageBox" Margin="35,14,374,211"/>
+        <TextBox x:Name="tbxError0" HorizontalAlignment="Center" Height="31" Margin="0,560,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1006" Background="#FF171717" BorderBrush="#FF67686A" Foreground="#FF57E423"/>
+        <TextBox Name="tbxError1" HorizontalAlignment="Center" Height="31" Margin="0,604,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1006" Background="#FF171717" BorderBrush="#FF67686A" Foreground="#FF57E423"/>
+        <TextBox x:Name="tbxError2" HorizontalAlignment="Center" Height="31" Margin="0,650,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1006" Background="#FF171717" BorderBrush="#FF67686A" Foreground="#FF57E423"/>
+        <TextBox x:Name="tbxError3" HorizontalAlignment="Center" Height="31" Margin="0,692,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="1006" Background="#FF171717" BorderBrush="#FF67686A" Foreground="#FF57E423"/>
+
+
+
+
+    </Grid>
+</Window>

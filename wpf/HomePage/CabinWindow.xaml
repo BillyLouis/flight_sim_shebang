@@ -1,0 +1,98 @@
+﻿<Window x:Class="HomePage.CabinWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomePage"
+        mc:Ignorable="d"
+        Title="CabinWindow" Height="801" Width="1538" Background="#FF130303">
+    <Grid Background="Black" Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="609*"/>
+            <ColumnDefinition Width="160*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="382*"/>
+            <RowDefinition Height="409*"/>
+        </Grid.RowDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="368" VerticalAlignment="Center" Width="348" StrokeThickness="50" Stroke="#FFA8A9AD" Margin="6,0,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Width="442" StrokeThickness="50" Stroke="#FFA8A9AD" Margin="7,2,0,14" Grid.Row="1"/>
+        <Rectangle HorizontalAlignment="Left" Height="368" VerticalAlignment="Center" Width="426" StrokeThickness="50" Stroke="#FFA8A9AD" Margin="361,0,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="368" VerticalAlignment="Center" Width="522" StrokeThickness="50" Stroke="#FFA8A9AD" Margin="794,0,0,0" Grid.ColumnSpan="2"/>
+        <Rectangle HorizontalAlignment="Left" Height="394" VerticalAlignment="Top" Width="1067" StrokeThickness="50" Stroke="#FFA8A9AD" Margin="457,1,0,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Rectangle HorizontalAlignment="Left" Height="368" VerticalAlignment="Center" Width="201" StrokeThickness="50" Stroke="#FFA8A9AD" Margin="105,0,0,0" Grid.Column="1"/>
+
+        <Label Content="  PRESSURE" HorizontalAlignment="Left" Height="51" Margin="147,89,0,0" VerticalAlignment="Top" Width="107" Foreground="#FF16F716" FontSize="18" Grid.Column="1"/>
+        <Label Content="    CABIN" HorizontalAlignment="Left" Height="35" Margin="151,62,0,0" VerticalAlignment="Top" Width="107" Foreground="#FF16F716" FontSize="18" Grid.Column="1"/>
+
+        <Image HorizontalAlignment="Left" Height="234" Margin="58,72,0,0" VerticalAlignment="Top" Width="243" Source="Images\EGT1_Background.bmp"/>
+        <Image HorizontalAlignment="Left" Height="283" Margin="27,56,0,0" VerticalAlignment="Top" Width="223" Source="Images\Keypad1.png" Grid.Row="1" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="264" Margin="438,0,0,0" VerticalAlignment="Center" Width="266" Source=" Images\Fuel_Background.bmp"/>
+
+
+        <Image HorizontalAlignment="Left" Height="264" Margin="89,68,0,0" VerticalAlignment="Top" Width="274" Source="Images\Cabintempgauge.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="397,2,0,0" VerticalAlignment="Top" Width="59" Source="Images\Screw_Head30degree.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="10,2,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="395,341,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="457,341,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="10,341,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="457,2,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="249,1,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Row="1" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="251,342,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Row="1" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="298,320,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="8,318,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="6,12,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="300,12,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="361,318,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="733,316,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="733,12,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="363,11,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="111,11,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="109,318,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="794,318,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="795,11,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="253,11,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="252,318,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="42,11,0,0" VerticalAlignment="Top" Width="59" Source="/Images/Screw_Head30degree.png" Grid.Column="1"/>
+
+
+        <Label x:Name="lblCabinePressure0" Content="_________________" HorizontalAlignment="Left" Height="40" Margin="161,289,0,0" VerticalAlignment="Top" Width="79" Foreground="#FF16F716" FontSize="18" Grid.Column="1"/>
+        <Label x:Name="lblCabinePressure0_Copy" Content="_________________" HorizontalAlignment="Left" Height="40" Margin="161,279,0,0" VerticalAlignment="Top" Width="79" Foreground="#FF16F716" FontSize="18" Grid.Column="1"/>
+        <Label x:Name="lblCabinePressure0_Copy1" Content="_________________" HorizontalAlignment="Left" Height="40" Margin="161,269,0,0" VerticalAlignment="Top" Width="79" Foreground="#FF16F716" FontSize="18" Grid.Column="1"/>
+        <Label x:Name="lblCabinePressure0_Copy2" Content="_________________" HorizontalAlignment="Left" Height="40" Margin="161,257,0,0" VerticalAlignment="Top" Width="79" Foreground="#FF16F716" FontSize="18" Grid.Column="1"/>
+        <Label x:Name="lblCabinePressure0_Copy3" Content="_________________" HorizontalAlignment="Left" Height="40" Margin="161,245,0,0" VerticalAlignment="Top" Width="79" Foreground="#FF16F716" FontSize="18" Grid.Column="1"/>
+        <Label x:Name="lblCabinePressure0_Copy4" Content="_________________" HorizontalAlignment="Left" Height="40" Margin="161,215,0,0" VerticalAlignment="Top" Width="79" Foreground="#FF16F716" FontSize="18" Grid.Column="1"/>
+        <Label x:Name="lblCabinePressure0_Copy5" Content="_________________" HorizontalAlignment="Left" Height="40" Margin="161,233,0,0" VerticalAlignment="Top" Width="79" Foreground="#FF16F716" FontSize="18" Grid.Column="1"/>
+
+        <!-- X,Y,Z Coordinate for the joystick -->
+        <TextBlock Name="tblXjoystick" HorizontalAlignment="Left" Height="22" Margin="509,56,0,0" Grid.Row="1" Text="X" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+        <TextBlock x:Name="tblYjoystick" HorizontalAlignment="Left" Height="22" Margin="509,85,0,0" Grid.Row="1" Text="Y" TextWrapping="Wrap" VerticalAlignment="Top" Width="85"  Background="#FF554A4A"  Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="tblZjoystick" HorizontalAlignment="Left" Height="22" Margin="509,114,0,0" Grid.Row="1" Text="Z" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" Background="#FF554A4A"  Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+
+        <TextBlock x:Name="tblSliderjoystick" HorizontalAlignment="Left" Height="22" Margin="599,56,0,0" Grid.Row="1" Text="THROTTLE" TextWrapping="Wrap" VerticalAlignment="Top" Width="116"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="tblXjoystick_Copy1" HorizontalAlignment="Left" Height="22" Margin="599,85,0,0" Grid.Row="1" Text="FLIGHT HOR" TextWrapping="Wrap" VerticalAlignment="Top" Width="116"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="tblXjoystick_Copy2" HorizontalAlignment="Left" Height="22" Margin="599,114,0,0" Grid.Row="1" Text="FLIGHT VER" TextWrapping="Wrap" VerticalAlignment="Top" Width="116"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.439"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.326"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="tblXjoystick_Copy3" HorizontalAlignment="Left" Height="22" Margin="720,56,0,0" Grid.Row="1" Text="X" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="tblXjoystick_Copy4" HorizontalAlignment="Left" Height="22" Margin="720,85,0,0" Grid.Row="1" Text="X" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="tblXjoystick_Copy5" HorizontalAlignment="Left" Height="22" Margin="720,114,0,0" Grid.Row="1" Text="X" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="tblXjoystick_Copy6" HorizontalAlignment="Left" Height="22" Margin="811,56,0,0" Grid.Row="1" Text="AMMO: 500" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center" Cursor=""/>
+        <TextBlock x:Name="tblXjoystick_Copy7" HorizontalAlignment="Left" Height="22" Margin="811,85,0,0" Grid.Row="1" Text="MISSILE: 10" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="tblXjoystick_Copy8" HorizontalAlignment="Left" Height="22" Margin="811,114,0,0" Grid.Row="1" Text="FLARES: 20" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"  Background="#FF554A4A" Foreground="#FF15F129" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+
+        <local:Compass x:Name="Compass" HorizontalAlignment="Center" Height="177" Margin="0,159,0,0" VerticalAlignment="Top" Width="188" Grid.Row="1"/>
+        <local:horizon x:Name="horizon" HorizontalAlignment="Left" Height="177" Margin="708,159,0,0" VerticalAlignment="Top" Width="194" Tanguage="{Binding Value, ElementName=SdY}" Roulis="{Binding Content, ElementName=LbXpos}" Grid.Row="1"/>
+        <local:variometre x:Name="variometre" HorizontalAlignment="Left" Height="193" Margin="852,92,0,0" VerticalAlignment="Top" Width="199" DecifeetPm="{Binding Value, ElementName=SdY}"/>
+        <local:anemometre x:Name="anemometre" HorizontalAlignment="Left" Height="193" Margin="1065,92,0,0" VerticalAlignment="Top" Width="194" Vitesse="{Binding Value, ElementName=SdZ}" Grid.ColumnSpan="2"/>
+
+
+    </Grid>
+</Window>

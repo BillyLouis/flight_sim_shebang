@@ -1,0 +1,681 @@
+﻿<UserControl x:Class="HomePage.variometre"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HomePage"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="450">
+    <Grid x:Name="Grd">
+        <Grid.Resources>
+            <Storyboard x:Key="rotate">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" 
+                                               Storyboard.TargetName="aiguille">
+                    <!--<EasingDoubleKeyFrame KeyTime="0" Value="0"/>-->
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="89.22"/>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="translate">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="aiguille">
+                    <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="185.911"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="label">
+                    <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-19.068"/>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+
+        </Grid.Resources>
+        <Viewbox Stretch="Uniform">
+            <Grid>
+
+                <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform" Width="115" Height="115">
+                    <Canvas  Width="101.12882" Height="101.12881" d:IsLocked="True">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="0" Y="0"/>
+                        </Canvas.RenderTransform>
+                        <Canvas.Resources>
+                            <LinearGradientBrush  x:Key="linearGradient4241-1" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#00000000" Offset="0"/>
+                                        <GradientStop Color="#00000000" Offset="0.1875"/>
+                                        <GradientStop Color="#00000000" Offset="0.375"/>
+                                        <GradientStop Color="#00000000" Offset="0.75"/>
+                                        <GradientStop Color="#00000000" Offset="0.875"/>
+                                        <GradientStop Color="#32000000" Offset="0.9375"/>
+                                        <GradientStop Color="#64000000" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                            <LinearGradientBrush  x:Key="linearGradient4008-1" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FF505050" Offset="0"/>
+                                        <GradientStop Color="#FF282828" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                            <LinearGradientBrush  x:Key="linearGradient4008-5-7-2" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FF111111" Offset="0"/>
+                                        <GradientStop Color="#FF646464" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                            <LinearGradientBrush  x:Key="linearGradient4008-5-1" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FF0F0F0F" Offset="0"/>
+                                        <GradientStop Color="#FF505050" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                            <RadialGradientBrush  x:Key="radialGradient3453-8" MappingMode="Absolute" Center="349,103" GradientOrigin="349,103" RadiusX="42.813107" RadiusY="42.813107">
+                                <RadialGradientBrush.GradientStops>
+                                    <GradientStopCollection/>
+                                </RadialGradientBrush.GradientStops>
+                                <RadialGradientBrush.Transform>
+                                    <MatrixTransform Matrix="0.69594021 0.69594021 -0.69594017 0.69594017 -141.76831 -291.46331"/>
+                                </RadialGradientBrush.Transform>
+                            </RadialGradientBrush>
+                            <LinearGradientBrush  x:Key="linearGradient8140" MappingMode="Absolute" StartPoint="549,265" EndPoint="679,265">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FF505050" Offset="0"/>
+                                        <GradientStop Color="#FF282828" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                                <LinearGradientBrush.Transform>
+                                    <MatrixTransform Matrix="0.54586687 0.54586687 -0.56262597 0.56262597 -156.51695 -461.50447"/>
+                                </LinearGradientBrush.Transform>
+                            </LinearGradientBrush>
+                            <LinearGradientBrush  x:Key="linearGradient8142" MappingMode="Absolute" StartPoint="549,265" EndPoint="679,265">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FF111111" Offset="0"/>
+                                        <GradientStop Color="#FF646464" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                                <LinearGradientBrush.Transform>
+                                    <MatrixTransform Matrix="0.50120502 0.50120502 -0.51659291 0.51659291 -141.30851 -421.85815"/>
+                                </LinearGradientBrush.Transform>
+                            </LinearGradientBrush>
+                            <LinearGradientBrush  x:Key="linearGradient8144" MappingMode="Absolute" StartPoint="549,265" EndPoint="679,265">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FF0F0F0F" Offset="0"/>
+                                        <GradientStop Color="#FF505050" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                                <LinearGradientBrush.Transform>
+                                    <MatrixTransform Matrix="0.53097957 0.53097957 -0.54728163 0.54728163 -151.4376 -448.2921"/>
+                                </LinearGradientBrush.Transform>
+                            </LinearGradientBrush>
+                        </Canvas.Resources>
+                        <!--Unknown tag: sodipodi:namedview-->
+                        <!--Unknown tag: metadata-->
+                        <Canvas >
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="21.229065" Y="27.563329"/>
+                            </Canvas.RenderTransform>
+                            <Path   Fill="#FFCACACA" StrokeThickness="0.389418" Stroke="#FF000000" StrokeMiterLimit="4" StrokeLineJoin="Round" StrokeStartLineCap="Round" StrokeEndLineCap="Round">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 78.476233 23.001078 A 49.140888 49.140888 0 0 1 29.335344 72.141966 49.140888 49.140888 0 0 1 -19.805544 23.001078 49.140888 49.140888 0 0 1 29.335344 -26.139811 49.140888 49.140888 0 0 1 78.476233 23.001078 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FF1E1E1E" StrokeThickness="1.0497">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 79.899759 23.001081 A 50.564407 50.564407 0 0 1 29.335352 73.565489 50.564407 50.564407 0 0 1 -21.229055 23.001081 50.564407 50.564407 0 0 1 29.335352 -27.563326 50.564407 50.564407 0 0 1 79.899759 23.001081 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -12.801659 22.545547 h 9.1107048 v 0.911071 h -9.1107048 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -4.995801 -3.6402595 h 9.1107035 v 0.9110704 H -4.995801 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="43"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -17.145639 -28.114939 h 9.110704 v 0.911071 h -9.110704 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="86"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -42.723164 -37.728424 h 9.110705 v 0.91107 h -9.110705 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="129"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -67.985756 -27.315445 h 9.110705 v 0.91107 h -9.110705 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="172"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -36.36919 36.373047 h 9.110703 v 0.91107 h -9.110703 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-43"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -63.035755 30.412821 h 9.110704 v 0.91107 h -9.110704 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-86"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -78.473564 7.8672562 h 9.110704 v 0.9110704 h -9.110704 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-129"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -74.388023 -19.150084 h 9.110704 v 0.911071 h -9.110704 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-172"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -9.6920176 17.900265 h 5.4664226 v 0.91107 h -5.4664226 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="8.5999996"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -7.3119822 12.842215 h 5.4664226 v 0.91107 h -5.4664226 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="17.200001"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -5.7150607 7.4851322 h 5.46642255 V 8.3962026 H -5.7150607 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="25.800001"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M -4.9371715 1.9494892 H 0.5292511 V 2.8605596 H -4.9371715 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="34.4"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -5.8896327 -9.1583309 h 5.46642256 v 0.9110704 H -5.8896327 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="51.6"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -7.5985579 -14.480752 h 5.4664225 v 0.91107 h -5.4664225 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="60.2"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -10.084152 -19.487766 h 5.4664223 v 0.91107 h -5.4664223 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="68.8"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -13.29054 -24.066814 h 5.4664228 v 0.91107 H -13.29054 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="77.399999"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -16.570986 26.673664 h 5.466423 v 0.91107 h -5.466423 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-8.5999996"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -20.915199 30.191666 h 5.466422 v 0.91107 h -5.466422 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-17.200001"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -25.736645 33.020481 h 5.466423 v 0.911071 h -5.466423 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-25.800001"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -30.926893 35.096539 h 5.466422 v 0.91107 h -5.466422 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-34.4"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -41.94125 36.821541 h 5.466423 v 0.91107 h -5.466423 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-51.6"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -47.517666 36.431686 h 5.466423 v 0.911071 h -5.466423 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-60.2"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -52.973125 35.212345 h 5.466422 v 0.911071 h -5.466422 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-68.8"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m -58.184902 33.190929 h 5.466422 V 34.102 h -5.466422 z" FillRule="NonZero"/>
+                                </Path.Data>
+                                <Path.RenderTransform>
+                                    <RotateTransform Angle="-77.399999"/>
+                                </Path.RenderTransform>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 0.02094645 19.671316 c 0.63169521 9e-6 1.12548625 0.225403 1.48137765 0.676187 0.4240942 0.533833 0.6361413 1.419102 0.6361504 2.655807 -9.1e-6 1.233739 -0.2135367 2.120493 -0.6405964 2.660252 -0.3529259 0.444858 -0.84523644 0.667287 -1.47693165 0.667287 -0.63466987 0 -1.14625415 -0.24393 -1.53476185 -0.73179 -0.3885123 -0.48786 -0.5827662 -1.357559 -0.5827662 -2.609096 0 -1.227805 0.2135321 -2.111593 0.6405964 -2.651357 0.3529213 -0.444852 0.84522732 -0.667281 1.47693165 -0.66729 z m 0 1.03652 c -0.15125591 9e-6 -0.28619455 0.0482 -0.40482047 0.144582 -0.11863503 0.09639 -0.21057115 0.269144 -0.2758129 0.518258 -0.0860096 0.323271 -0.12901212 0.86748 -0.12901212 1.632634 0 0.765158 0.0385383 1.290832 0.11566494 1.577022 0.0771084 0.286194 0.1742331 0.47674 0.29138309 0.571642 0.11714543 0.09491 0.25134155 0.142354 0.40259746 0.142354 0.15124679 0 0.28618998 -0.04819 0.40482046 -0.144577 0.11862592 -0.09639 0.21056204 -0.26914 0.2758129 -0.518263 C 0.7875803 24.311192 0.83058282 23.768468 0.83058738 23.00331 0.83058282 22.238156 0.7920491 21.712482 0.71492699 21.426283 0.63781399 21.140098 0.54068478 20.94881 0.4235439 20.852418 0.30639391 20.756036 0.17219324 20.707845 0.02094645 20.707836 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 6.103052 5.7245544 7.3486583 5.5955468 c 0.035577 0.281744 0.1408697 0.5049152 0.3158454 0.6695092 0.1749756 0.1646031 0.3766456 0.2469001 0.6050099 0.2469001 0.2609807 0 0.4819289 -0.1060259 0.6628402 -0.3180775 C 9.1132605 5.9818315 9.2037116 5.6622781 9.2037161 5.2352093 9.2037116 4.8348395 9.1139985 4.5345598 8.9345768 4.3343703 8.755146 4.1341899 8.5215977 4.0340951 8.2339227 4.0340906 7.8750703 4.0340951 7.5532893 4.1927626 7.2685798 4.510093 L 6.2543034 4.3632876 6.8948997 0.96901742 H 10.200199 V 2.1389958 H 7.8424494 L 7.6467105 3.2466934 C 7.9254889 3.1073088 8.2101984 3.0376119 8.500839 3.0376073 c 0.5545867 4.6e-6 1.0246535 0.2016746 1.4102048 0.60501 0.3855382 0.40334 0.5783112 0.9267909 0.5783152 1.5703483 -4e-6 0.5367981 -0.155706 1.0157615 -0.467101 1.4368946 -0.4241031 0.5753501 -1.0128003 0.8630251 -1.7660915 0.8630251 -0.6020445 0 -1.09287 -0.1616284 -1.4724811 -0.4848944 C 6.4040742 6.7047295 6.1771949 6.2702491 6.103052 5.7245544 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 25.367207 -2.1645682 h -1.250052 v -4.7110494 c -0.456724 0.4270642 -0.995003 0.7429141 -1.614836 0.9475451 v -1.1343874 c 0.326227 -0.1067638 0.680634 -0.3091718 1.06321 -0.607233 0.382577 -0.2980476 0.645043 -0.6457804 0.787402 -1.0431938 h 1.014276 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 29.35314 -8.7128867 c 0.631696 9.1e-6 1.125491 0.2254033 1.481383 0.6761873 0.424094 0.5338326 0.636141 1.4191015 0.636145 2.6558067 -4e-6 1.2337396 -0.213536 2.1204936 -0.640596 2.6602527 -0.352926 0.4448574 -0.845236 0.6672861 -1.476932 0.6672861 -0.634665 0 -1.146254 -0.24393 -1.534761 -0.7317899 -0.388508 -0.48786 -0.582767 -1.3575587 -0.582762 -2.6090961 -5e-6 -1.227804 0.213527 -2.1115924 0.640596 -2.6513561 0.352917 -0.4448529 0.845228 -0.6672816 1.476927 -0.6672907 z m 0 1.0365202 c -0.151251 4.6e-6 -0.286194 0.0482 -0.40482 0.1445823 -0.118631 0.096391 -0.210567 0.2691439 -0.275813 0.5182579 -0.08601 0.3232705 -0.129008 0.8674802 -0.129008 1.6326336 0 0.7651579 0.03854 1.2908318 0.115665 1.5770218 0.0771 0.2861946 0.174234 0.4767404 0.291379 0.5716421 0.117145 0.094906 0.251346 0.1423547 0.402597 0.1423547 0.151252 0 0.28619 -0.048191 0.404821 -0.1445778 0.118626 -0.096387 0.210566 -0.2691393 0.275813 -0.5182624 0.08601 -0.3202959 0.129007 -0.8630205 0.129012 -1.6281784 -5e-6 -0.7651534 -0.03854 -1.2908273 -0.115665 -1.5770264 -0.07711 -0.2861855 -0.174238 -0.4774738 -0.291383 -0.5738651 -0.11715 -0.096382 -0.251346 -0.1445777 -0.402598 -0.1445823 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 43.13308 4.6684598 h -1.250052 v -4.7110494 c -0.456724 0.42706425 -0.995003 0.74291414 -1.614836 0.9475451 v -1.13438742 c 0.326227 -0.10676378 0.680633 -0.30917174 1.06321 -0.60723298 0.382577 -0.2980476 0.645042 -0.6457804 0.787402 -1.0431938 h 1.014276 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 45.023729 2.9913432 1.245606 -0.1290076 c 0.03558 0.281744 0.14087 0.5049152 0.31585 0.6695092 0.174976 0.1646031 0.376646 0.2469001 0.605006 0.2469001 0.26098 0 0.481928 -0.1060259 0.66284 -0.3180775 0.180906 -0.2120471 0.271362 -0.5316005 0.271362 -0.9586693 0 -0.4003698 -0.08971 -0.7006495 -0.269139 -0.900839 -0.179426 -0.2001804 -0.412979 -0.3002752 -0.70065 -0.3002797 -0.358857 4.5e-6 -0.680638 0.158672 -0.965343 0.4760024 L 45.17498 1.6300764 45.815577 -1.7641938 h 3.305299 v 1.1699784 h -2.35775 l -0.195734 1.10769762 c 0.278774 -0.13938466 0.563483 -0.20908155 0.854128 -0.2090861 0.554587 4.55e-6 1.024654 0.20167454 1.410201 0.60500996 0.385537 0.40334002 0.578311 0.92679092 0.578315 1.57034832 -4e-6 0.5367981 -0.155706 1.0157615 -0.467101 1.4368946 -0.424103 0.5753501 -1.0128 0.8630251 -1.766087 0.8630251 -0.602044 0 -1.092875 -0.1616284 -1.472486 -0.4848944 -0.379611 -0.3232614 -0.60649 -0.7577418 -0.680633 -1.3034365 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 55.127358 25.058552 v 1.161082 h -4.381856 c 0.04745 -0.438926 0.189807 -0.854866 0.427064 -1.247829 0.237256 -0.392954 0.705843 -0.914182 1.405754 -1.563675 0.563484 -0.524931 0.908989 -0.880818 1.03652 -1.06766 0.17201 -0.258016 0.258016 -0.51307 0.258016 -0.765158 0 -0.278774 -0.07489 -0.493049 -0.224652 -0.64282 -0.149771 -0.149766 -0.35663 -0.224647 -0.620576 -0.224656 -0.26099 9e-6 -0.468586 0.0786 -0.622803 0.235776 -0.154221 0.157187 -0.243192 0.418172 -0.266916 0.782951 l -1.245602 -0.124562 c 0.07414 -0.68804 0.306949 -1.181831 0.698426 -1.481377 0.391474 -0.299533 0.880819 -0.449299 1.468036 -0.449308 0.643557 9e-6 1.14921 0.173504 1.516964 0.520485 0.367749 0.346995 0.551621 0.77851 0.551625 1.29454 -4e-6 0.293611 -0.05265 0.573127 -0.157924 0.838558 -0.105288 0.265436 -0.27211 0.543472 -0.500465 0.834108 -0.151256 0.192778 -0.424103 0.470071 -0.818542 0.831885 -0.394444 0.361822 -0.644305 0.602044 -0.749583 0.720675 -0.105288 0.11863 -0.190551 0.234291 -0.255797 0.346985 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 58.090118 19.671316 c 0.631696 9e-6 1.125487 0.225403 1.481378 0.676187 0.424094 0.533833 0.636141 1.419102 0.636146 2.655807 -5e-6 1.233739 -0.213537 2.120493 -0.640596 2.660252 -0.352922 0.444858 -0.845232 0.667287 -1.476928 0.667287 -0.634669 0 -1.146254 -0.24393 -1.534761 -0.73179 -0.388513 -0.48786 -0.582767 -1.357559 -0.582767 -2.609096 0 -1.227805 0.213532 -2.111593 0.640597 -2.651357 0.352921 -0.444852 0.845227 -0.667281 1.476931 -0.66729 z m 0 1.03652 c -0.151256 9e-6 -0.286194 0.0482 -0.404825 0.144582 -0.11863 0.09639 -0.210566 0.269144 -0.275808 0.518258 -0.08601 0.323271 -0.129012 0.86748 -0.129012 1.632634 0 0.765158 0.03854 1.290832 0.115665 1.577022 0.07711 0.286194 0.174233 0.47674 0.291383 0.571642 0.117141 0.09491 0.251341 0.142354 0.402597 0.142354 0.151247 0 0.28619 -0.04819 0.404821 -0.144577 0.118626 -0.09639 0.210562 -0.26914 0.275813 -0.518263 0.086 -0.320296 0.129003 -0.86302 0.129007 -1.628178 -4e-6 -0.765154 -0.03854 -1.290828 -0.115665 -1.577027 -0.07711 -0.286185 -0.174237 -0.477473 -0.291378 -0.573865 -0.11715 -0.09638 -0.251351 -0.144573 -0.402598 -0.144582 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 6.103052 43.244834 1.2456063 -0.129007 c 0.035577 0.281744 0.1408697 0.504915 0.3158454 0.669509 0.1749756 0.164603 0.3766456 0.2469 0.6050099 0.2469 0.2609807 0 0.4819289 -0.106026 0.6628402 -0.318077 0.1809067 -0.212047 0.2713578 -0.531601 0.2713623 -0.95867 -4.5e-6 -0.40037 -0.089718 -0.700649 -0.2691393 -0.900839 -0.1794308 -0.20018 -0.4129791 -0.300275 -0.7006541 -0.300279 -0.3588524 4e-6 -0.6806334 0.158672 -0.9653429 0.476002 L 6.2543034 41.883568 6.8948997 38.489297 h 3.3052993 v 1.169979 H 7.8424494 l -0.1957389 1.107697 c 0.2787784 -0.139384 0.5634879 -0.209081 0.8541285 -0.209086 0.5545867 5e-6 1.0246535 0.201675 1.4102048 0.60501 0.3855382 0.40334 0.5783112 0.926791 0.5783152 1.570349 -4e-6 0.536798 -0.155706 1.015761 -0.467101 1.436894 -0.4241031 0.57535 -1.0128003 0.863025 -1.7660915 0.863025 -0.6020445 0 -1.09287 -0.161628 -1.4724811 -0.484894 C 6.4040742 44.225009 6.1771949 43.790529 6.103052 43.244834 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 25.367207 54.603852 h -1.250052 v -4.71105 c -0.456724 0.427065 -0.995003 0.742915 -1.614836 0.947546 V 49.70596 c 0.326227 -0.106764 0.680634 -0.309172 1.06321 -0.607233 0.382577 -0.298047 0.645043 -0.64578 0.787402 -1.043194 h 1.014276 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 29.35314 48.055533 c 0.631696 9e-6 1.125491 0.225404 1.481383 0.676188 0.424094 0.533832 0.636141 1.419101 0.636145 2.655806 -4e-6 1.23374 -0.213536 2.120494 -0.640596 2.660253 -0.352926 0.444857 -0.845236 0.667286 -1.476932 0.667286 -0.634665 0 -1.146254 -0.24393 -1.534761 -0.73179 -0.388508 -0.48786 -0.582767 -1.357558 -0.582762 -2.609096 -5e-6 -1.227804 0.213527 -2.111592 0.640596 -2.651356 0.352917 -0.444853 0.845228 -0.667282 1.476927 -0.667291 z m 0 1.036521 c -0.151251 4e-6 -0.286194 0.0482 -0.40482 0.144582 -0.118631 0.09639 -0.210567 0.269144 -0.275813 0.518258 -0.08601 0.32327 -0.129008 0.86748 -0.129008 1.632633 0 0.765158 0.03854 1.290832 0.115665 1.577022 0.0771 0.286195 0.174234 0.476741 0.291379 0.571642 0.117145 0.09491 0.251346 0.142355 0.402597 0.142355 0.151252 0 0.28619 -0.04819 0.404821 -0.144578 0.118626 -0.09639 0.210566 -0.269139 0.275813 -0.518262 0.08601 -0.320296 0.129007 -0.863021 0.129012 -1.628179 -5e-6 -0.765153 -0.03854 -1.290827 -0.115665 -1.577026 -0.07711 -0.286186 -0.174238 -0.477474 -0.291383 -0.573865 -0.11715 -0.09638 -0.251346 -0.144578 -0.402598 -0.144582 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 43.13308 47.77083 h -1.250052 v -4.71105 c -0.456724 0.427065 -0.995003 0.742915 -1.614836 0.947546 v -1.134388 c 0.326227 -0.106764 0.680633 -0.309172 1.06321 -0.607233 0.382577 -0.298047 0.645042 -0.64578 0.787402 -1.043194 h 1.014276 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 45.023729 46.093713 1.245606 -0.129007 c 0.03558 0.281744 0.14087 0.504915 0.31585 0.669509 0.174976 0.164603 0.376646 0.2469 0.605006 0.2469 0.26098 0 0.481928 -0.106026 0.66284 -0.318078 0.180906 -0.212047 0.271362 -0.5316 0.271362 -0.958669 0 -0.40037 -0.08971 -0.700649 -0.269139 -0.900839 -0.179426 -0.20018 -0.412979 -0.300275 -0.70065 -0.30028 -0.358857 5e-6 -0.680638 0.158672 -0.965343 0.476003 l -1.014281 -0.146806 0.640597 -3.39427 h 3.305299 v 1.169979 h -2.35775 l -0.195734 1.107697 c 0.278774 -0.139384 0.563483 -0.209081 0.854128 -0.209086 0.554587 5e-6 1.024654 0.201675 1.410201 0.60501 0.385537 0.40334 0.578311 0.926791 0.578315 1.570348 -4e-6 0.536798 -0.155706 1.015762 -0.467101 1.436895 -0.424103 0.57535 -1.0128 0.863025 -1.766087 0.863025 -0.602044 0 -1.092875 -0.161628 -1.472486 -0.484894 -0.379611 -0.323262 -0.60649 -0.757742 -0.680633 -1.303437 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 31.636152 11.640802 30.246414 8.0539042 h 0.513812 l 0.932198 2.6057618 c 0.07503 0.208785 0.137832 0.404524 0.188401 0.587212 0.05546 -0.195739 0.119887 -0.391473 0.193288 -0.587212 l 0.968905 -2.6057618 h 0.484448 l -1.404415 3.5868978 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 33.967877 11.640802 V 8.0539042 h 2.593526 V 8.4771875 H 34.44254 v 1.0985778 h 1.984294 V 9.9966024 H 34.44254 v 1.2209166 h 2.202053 v 0.423283 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 37.312549 11.640802 V 8.0539042 h 1.590369 c 0.319699 4.6e-6 0.562741 0.032206 0.72912 0.096646 0.166376 0.064436 0.299314 0.1782054 0.398817 0.3413189 0.0995 0.163118 0.149247 0.3433597 0.149252 0.5407248 -5e-6 0.254462 -0.08238 0.4689553 -0.247119 0.6434891 -0.164749 0.1745337 -0.419211 0.285452 -0.763377 0.332755 0.125596 0.06035 0.221017 0.119888 0.286263 0.178611 0.138647 0.127231 0.269955 0.286267 0.393924 0.477109 l 0.623915 0.976244 h -0.597002 l -0.474663 -0.746253 c -0.138651 -0.215309 -0.252831 -0.380058 -0.34254 -0.494238 -0.08972 -0.11418 -0.170051 -0.194103 -0.241005 -0.23978 -0.07095 -0.04567 -0.143134 -0.07748 -0.216534 -0.09542 -0.05383 -0.01143 -0.141913 -0.01713 -0.264247 -0.01713 h -0.55051 v 1.59282 z m 0.474663 -2.0038674 h 1.02028 c 0.216945 0 0.386581 -0.022412 0.50892 -0.067287 0.122334 -0.04487 0.215309 -0.1166216 0.278929 -0.2153087 0.06361 -0.098683 0.09542 -0.2059293 0.09542 -0.3217446 -5e-6 -0.1696367 -0.06158 -0.3090988 -0.184729 -0.4183908 -0.123153 -0.109283 -0.317667 -0.1639245 -0.583544 -0.163929 h -1.135276 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 41.838984 11.640802 V 8.4771875 H 40.657216 V 8.0539042 h 2.843091 v 0.4232833 h -1.18666 v 3.1636145 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 44.070395 11.640802 V 8.0539042 h 0.474663 v 3.5868978 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 47.938664 10.383183 0.474663 0.119893 c -0.0995 0.389842 -0.278524 0.68712 -0.537058 0.891828 -0.258539 0.204709 -0.574571 0.307063 -0.948105 0.307063 -0.386581 0 -0.700987 -0.0787 -0.943209 -0.236109 -0.242226 -0.157405 -0.426549 -0.385355 -0.55296 -0.683858 -0.126416 -0.298499 -0.189621 -0.619018 -0.189621 -0.9615622 0 -0.3735297 0.07136 -0.6993513 0.214087 -0.9774646 0.142724 -0.2781088 0.345802 -0.4893405 0.609233 -0.6336996 0.263432 -0.1443546 0.553366 -0.2165341 0.869813 -0.2165387 0.358848 4.6e-6 0.660612 0.091349 0.905285 0.2740363 0.244668 0.1826924 0.415125 0.4395961 0.511365 0.7707155 L 47.884833 9.1475895 C 47.801643 8.8866089 47.680935 8.6965824 47.522719 8.5775055 47.364493 8.4584331 47.165493 8.3988947 46.925717 8.3988947 c -0.275662 0 -0.506063 0.066062 -0.691197 0.1981806 -0.185139 0.1321279 -0.315221 0.3095133 -0.390252 0.5321653 -0.07504 0.2226519 -0.112549 0.4522371 -0.112549 0.688751 0 0.3050264 0.04446 0.5713094 0.133344 0.7988534 0.0889 0.227549 0.227139 0.397596 0.414719 0.510145 0.18758 0.112549 0.390658 0.168822 0.609237 0.168822 0.265874 0 0.490972 -0.07666 0.675295 -0.229991 0.184314 -0.153329 0.309099 -0.380873 0.37435 -0.682638 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 48.606615 11.640802 1.377506 -3.5868978 h 0.511366 l 1.468031 3.5868978 h -0.540725 l -0.418387 -1.086347 h -1.49984 l -0.393924 1.086347 z m 1.034967 -1.472927 h 1.216019 l -0.37435 -0.9933724 c -0.11418 -0.3017602 -0.199 -0.5496944 -0.254457 -0.7438025 -0.04567 0.2299952 -0.110103 0.458355 -0.193293 0.685084 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 52.328082 11.640802 V 8.0539042 h 0.474664 v 3.1636148 h 1.766533 v 0.423283 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 30.449492 16.752003 0.44775 -0.03913 c 0.02118 0.179431 0.07054 0.326642 0.148026 0.441637 0.07748 0.114995 0.197775 0.20797 0.360889 0.278924 0.163113 0.07095 0.346621 0.106431 0.550514 0.106431 0.181057 0 0.340909 -0.02692 0.47956 -0.08074 0.138642 -0.05383 0.241812 -0.127636 0.309509 -0.221431 0.06769 -0.09379 0.101534 -0.196144 0.101539 -0.307062 -5e-6 -0.112549 -0.03262 -0.210827 -0.09787 -0.294832 -0.06525 -0.084 -0.172908 -0.154549 -0.32297 -0.211641 -0.09624 -0.03754 -0.309104 -0.09583 -0.638592 -0.17494 -0.329493 -0.07911 -0.560304 -0.153734 -0.692423 -0.223872 -0.171272 -0.08971 -0.298908 -0.201042 -0.382914 -0.333981 -0.08401 -0.132934 -0.126005 -0.281775 -0.126005 -0.446524 0 -0.181057 0.05138 -0.350289 0.154144 -0.507699 0.10276 -0.157401 0.252826 -0.276883 0.450196 -0.358442 0.197365 -0.08155 0.416756 -0.122334 0.658167 -0.122339 0.265877 5e-6 0.500355 0.04282 0.703432 0.128457 0.203078 0.08564 0.359258 0.211641 0.46855 0.378016 0.109283 0.16638 0.168006 0.35478 0.176165 0.565192 l -0.455093 0.03426 c -0.02446 -0.226729 -0.107252 -0.397996 -0.24834 -0.513812 -0.141097 -0.11581 -0.349477 -0.173713 -0.62514 -0.173718 -0.287083 5e-6 -0.496278 0.05261 -0.627582 0.157816 -0.131308 0.10521 -0.196964 0.232031 -0.196964 0.380463 0 0.128866 0.04649 0.234887 0.139467 0.318073 0.09134 0.08319 0.329894 0.16842 0.715664 0.255682 0.385765 0.08727 0.650417 0.163528 0.793961 0.22877 0.208785 0.09624 0.362929 0.21817 0.462432 0.365786 0.09949 0.14762 0.149247 0.317667 0.149247 0.51014 0 0.190846 -0.05465 0.370678 -0.163929 0.539504 -0.109287 0.168821 -0.266288 0.300129 -0.470996 0.393919 -0.204708 0.0938 -0.435109 0.140688 -0.691197 0.140688 -0.324601 0 -0.596592 -0.0473 -0.815982 -0.141908 -0.21939 -0.09461 -0.391478 -0.236924 -0.516258 -0.426955 -0.124785 -0.190027 -0.190437 -0.40493 -0.19696 -0.64471 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 33.958092 17.904411 v -3.586898 h 1.353036 c 0.238144 5e-6 0.420017 0.01143 0.545617 0.03426 0.176165 0.02938 0.323781 0.08523 0.442858 0.167601 0.119072 0.08237 0.214903 0.19778 0.287492 0.346211 0.07258 0.148436 0.108873 0.31155 0.108878 0.489345 -5e-6 0.305027 -0.09706 0.563156 -0.29116 0.774387 -0.194108 0.211232 -0.544806 0.316852 -1.05209 0.316848 h -0.919967 v 1.45825 z m 0.474664 -1.881533 h 0.927305 c 0.306653 4e-6 0.524412 -0.05709 0.653274 -0.171268 0.128862 -0.11418 0.193288 -0.274847 0.193293 -0.482006 -5e-6 -0.150063 -0.03795 -0.278515 -0.113775 -0.38536 -0.07585 -0.106837 -0.175754 -0.177381 -0.299719 -0.211637 -0.07993 -0.02118 -0.227549 -0.0318 -0.442858 -0.0318 h -0.91752 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 37.314995 17.904411 v -3.586898 h 2.593526 v 0.423284 h -2.118863 v 1.098577 h 1.984293 v 0.420837 h -1.984293 v 1.220917 h 2.202048 v 0.423283 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 40.662108 17.904411 v -3.586898 h 2.593526 v 0.423284 h -2.118863 v 1.098577 h 1.984294 v 0.420837 h -1.984294 v 1.220917 h 2.202053 v 0.423283 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 43.999437 17.904411 v -3.586898 h 1.235598 c 0.278924 5e-6 0.491787 0.01713 0.638592 0.05138 0.205524 0.04731 0.380873 0.132943 0.526047 0.256908 0.189212 0.159857 0.33071 0.364155 0.424505 0.612905 0.09379 0.248754 0.140682 0.53298 0.140687 0.852679 -5e-6 0.272406 -0.0318 0.513817 -0.09542 0.724233 -0.06362 0.210416 -0.145174 0.384545 -0.244672 0.522376 -0.0995 0.137831 -0.208385 0.246303 -0.326637 0.325412 -0.118262 0.07911 -0.26099 0.139056 -0.428176 0.179836 -0.167195 0.04077 -0.359263 0.06117 -0.576207 0.06117 z m 0.474667 -0.423283 h 0.765823 c 0.236514 0 0.422058 -0.022 0.556628 -0.06606 0.13457 -0.04405 0.241816 -0.106026 0.321744 -0.185954 0.112549 -0.112549 0.200222 -0.263837 0.263022 -0.453863 0.0628 -0.190031 0.09419 -0.420428 0.0942 -0.691202 -5e-6 -0.375161 -0.06158 -0.663464 -0.184729 -0.864916 -0.123154 -0.201442 -0.272811 -0.336422 -0.448971 -0.404934 -0.127231 -0.04893 -0.331939 -0.0734 -0.614129 -0.0734 h -0.753588 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 31.726681 31.68437 h -0.440412 v -2.806393 c -0.106026 0.101134 -0.245082 0.202267 -0.417165 0.303396 -0.172088 0.101133 -0.326637 0.17698 -0.463653 0.227544 v -0.425729 c 0.246303 -0.115811 0.461612 -0.256088 0.645935 -0.420837 0.184319 -0.164744 0.314807 -0.324596 0.391473 -0.479556 h 0.283822 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 32.857064 29.915386 c 0 -0.424094 0.04364 -0.765413 0.130902 -1.023952 0.08726 -0.258534 0.21694 -0.45794 0.389028 -0.598222 0.172087 -0.140278 0.388621 -0.210417 0.649606 -0.210417 0.192473 0 0.361294 0.03877 0.506469 0.116216 0.14517 0.07748 0.265062 0.189216 0.359668 0.335201 0.09461 0.14599 0.168821 0.323786 0.222652 0.533387 0.05383 0.209605 0.08074 0.492201 0.08074 0.847787 -4e-6 0.420842 -0.04323 0.760525 -0.129677 1.019064 -0.08645 0.258535 -0.215723 0.458351 -0.387806 0.599443 -0.172088 0.141098 -0.389437 0.211642 -0.652049 0.211642 -0.345805 0 -0.617391 -0.123965 -0.814761 -0.371899 -0.236514 -0.298503 -0.354775 -0.784582 -0.354775 -1.45825 z m 0.452647 0 c -5e-6 0.588848 0.06891 0.980731 0.206745 1.175654 0.137831 0.194919 0.307878 0.292381 0.510144 0.292381 0.202258 0 0.372305 -0.09787 0.510141 -0.293606 0.137831 -0.195739 0.206744 -0.587212 0.206749 -1.174429 -5e-6 -0.590469 -0.06892 -0.982762 -0.206749 -1.176871 -0.137836 -0.194103 -0.309514 -0.291155 -0.515038 -0.291159 -0.202262 4e-6 -0.363744 0.08564 -0.484448 0.256903 -0.151697 0.21858 -0.227549 0.622289 -0.227544 1.211127 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 35.646329 29.915386 c 0 -0.424094 0.04364 -0.765413 0.130898 -1.023952 0.08727 -0.258534 0.216944 -0.45794 0.389031 -0.598222 0.172083 -0.140278 0.388617 -0.210417 0.649603 -0.210417 0.192477 0 0.361298 0.03877 0.506473 0.116216 0.14517 0.07748 0.265058 0.189216 0.359668 0.335201 0.09461 0.14599 0.168821 0.323786 0.222652 0.533387 0.05383 0.209605 0.08074 0.492201 0.08074 0.847787 -4e-6 0.420842 -0.04323 0.760525 -0.129677 1.019064 -0.08646 0.258535 -0.215723 0.458351 -0.387806 0.599443 -0.172088 0.141098 -0.389437 0.211642 -0.652053 0.211642 -0.345802 0 -0.617387 -0.123965 -0.814757 -0.371899 -0.236518 -0.298503 -0.354775 -0.784582 -0.354775 -1.45825 z m 0.452642 0 c 0 0.588848 0.06892 0.980731 0.206749 1.175654 0.137832 0.194919 0.307878 0.292381 0.510141 0.292381 0.202262 0 0.372309 -0.09787 0.510144 -0.293606 0.137827 -0.195739 0.206745 -0.587212 0.206745 -1.174429 0 -0.590469 -0.06892 -0.982762 -0.206745 -1.176871 -0.137835 -0.194103 -0.309513 -0.291155 -0.515037 -0.291159 -0.202262 4e-6 -0.363745 0.08564 -0.484452 0.256903 -0.151698 0.21858 -0.227545 0.622289 -0.227545 1.211127 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 40.028409 31.68437 v -3.586897 h 2.419807 v 0.423283 h -1.945144 v 1.110813 h 1.683344 v 0.423284 h -1.683344 v 1.629517 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 43.077023 31.68437 v -3.586897 h 2.593526 v 0.423283 h -2.118862 v 1.098578 h 1.984293 v 0.420837 h -1.984293 v 1.220916 h 2.202052 v 0.423283 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 46.424141 31.68437 v -3.586897 h 2.593526 v 0.423283 h -2.118863 v 1.098578 h 1.984293 v 0.420837 h -1.984293 v 1.220916 h 2.202048 v 0.423283 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 50.674098 31.68437 V 28.520756 H 49.49233 v -0.423283 h 2.843091 v 0.423283 h -1.18666 v 3.163614 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 30.246414 37.947979 v -3.586897 h 1.353036 c 0.238144 4e-6 0.420017 0.01143 0.545621 0.03426 0.17616 0.02938 0.323777 0.08523 0.442854 0.1676 0.119072 0.08237 0.214903 0.19778 0.287492 0.346212 0.07258 0.148436 0.108873 0.311549 0.108878 0.489345 -5e-6 0.305026 -0.09706 0.563155 -0.29116 0.774387 -0.194108 0.211231 -0.544806 0.316852 -1.05209 0.316847 h -0.919967 v 1.45825 z m 0.474664 -1.881533 h 0.927305 c 0.306657 5e-6 0.524412 -0.05709 0.653279 -0.171268 0.128857 -0.11418 0.193288 -0.274847 0.193288 -0.482006 0 -0.150062 -0.03795 -0.278514 -0.11377 -0.38536 -0.07585 -0.106837 -0.175759 -0.177381 -0.299724 -0.211637 -0.07993 -0.02118 -0.227549 -0.0318 -0.442858 -0.0318 h -0.91752 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 33.603317 37.947979 v -3.586897 h 2.593526 v 0.423283 H 34.07798 v 1.098578 h 1.984293 V 36.30378 H 34.07798 v 1.220916 h 2.202048 v 0.423283 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 36.947984 37.947979 v -3.586897 h 1.590369 c 0.319704 4e-6 0.562746 0.03221 0.729125 0.09665 0.166375 0.06443 0.299314 0.178205 0.398817 0.341319 0.09949 0.163118 0.149247 0.343359 0.149247 0.540725 0 0.254462 -0.08237 0.468955 -0.247119 0.643489 -0.164749 0.174533 -0.419206 0.285452 -0.763377 0.332754 0.125596 0.06035 0.221021 0.119888 0.286268 0.178611 0.138646 0.127231 0.26995 0.286268 0.393924 0.47711 l 0.623914 0.976243 H 39.512151 L 39.037488 37.20173 c -0.138652 -0.215308 -0.252832 -0.380057 -0.342545 -0.494237 -0.08971 -0.11418 -0.170046 -0.194104 -0.241001 -0.23978 -0.07096 -0.04567 -0.143133 -0.07748 -0.216534 -0.09542 -0.05383 -0.01143 -0.141913 -0.01713 -0.264247 -0.01713 h -0.550514 v 1.592819 z m 0.474663 -2.003867 h 1.020285 c 0.21694 0 0.386581 -0.02241 0.50892 -0.06729 0.122334 -0.04487 0.215308 -0.116622 0.278924 -0.215309 0.06361 -0.09868 0.09542 -0.205929 0.09542 -0.321744 -4e-6 -0.169637 -0.06158 -0.309099 -0.184728 -0.418391 -0.123154 -0.109283 -0.317668 -0.163925 -0.583546 -0.163929 h -1.13528 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 41.936851 37.947979 v -3.586897 h 0.714443 l 0.849013 2.539699 c 0.07829 0.236514 0.135385 0.413494 0.171272 0.530936 0.04077 -0.130488 0.10439 -0.32215 0.190842 -0.574977 l 0.858802 -2.495658 h 0.638592 v 3.586897 H 44.90228 v -3.002131 l -1.042305 3.002131 H 43.431799 L 42.39439 34.894468 v 3.053511 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 46.211274 37.947979 v -3.586897 h 0.474668 v 3.586897 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 47.51538 37.947979 v -3.586897 h 0.486895 l 1.883979 2.816177 v -2.816177 h 0.455089 v 3.586897 h -0.486899 l -1.883975 -2.818624 v 2.818624 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 53.495168 34.361082 h 0.474663 v 2.072375 c -4e-6 0.360483 -0.04077 0.646751 -0.122334 0.858798 -0.08156 0.212051 -0.228774 0.384544 -0.441637 0.517483 -0.212867 0.132939 -0.492201 0.199406 -0.838002 0.199406 -0.336017 0 -0.610864 -0.0579 -0.824542 -0.173718 -0.213682 -0.115811 -0.366195 -0.283411 -0.457539 -0.502797 -0.09134 -0.21939 -0.137016 -0.519114 -0.137016 -0.899172 v -2.072375 h 0.474663 v 2.069929 c 0 0.311549 0.02897 0.541135 0.08686 0.688751 0.0579 0.147621 0.157401 0.26139 0.298498 0.341319 0.141093 0.07992 0.313586 0.119887 0.517484 0.119887 0.349062 0 0.597812 -0.07911 0.746248 -0.237329 0.148432 -0.158221 0.222648 -0.462432 0.222652 -0.912628 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 55.675196 37.947979 v -3.163614 h -1.181763 v -0.423283 h 2.84309 v 0.423283 h -1.18666 v 3.163614 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 57.835653 37.947979 v -3.586897 h 2.593526 v 0.423283 h -2.118863 v 1.098578 h 1.984294 v 0.420837 h -1.984294 v 1.220916 h 2.202053 v 0.423283 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 8.4494562 13.205191 h 0.4746632 v 2.072371 c -4.6e-6 0.360488 -0.04077 0.646751 -0.122334 0.858802 -0.081564 0.212048 -0.2287744 0.38454 -0.4416368 0.517479 -0.2128671 0.132939 -0.4922013 0.199411 -0.8380026 0.199411 -0.3360164 0 -0.6108636 -0.05791 -0.824546 -0.173718 C 6.4839221 16.563725 6.3314089 16.396124 6.240065 16.176734 6.148721 15.957344 6.1030491 15.65762 6.1030491 15.277562 v -2.072371 h 0.4746631 v 2.069925 c 0 0.31155 0.028972 0.541135 0.086857 0.688751 0.057908 0.147621 0.1574056 0.261395 0.2985031 0.341319 0.1410929 0.07993 0.3135859 0.119892 0.5174789 0.119888 0.3490675 4e-6 0.597817 -0.07911 0.7462532 -0.23733 0.1484316 -0.158221 0.2226474 -0.462432 0.2226519 -0.912628 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 9.7168554 16.792085 v -3.586894 h 1.3530396 c 0.238145 0 0.420017 0.01143 0.545617 0.03426 0.176165 0.02938 0.323781 0.08523 0.442858 0.1676 0.119072 0.08238 0.214903 0.19778 0.287488 0.346211 0.07259 0.148437 0.108878 0.311555 0.108882 0.489345 -4e-6 0.305027 -0.09706 0.563156 -0.29116 0.774387 -0.194108 0.211237 -0.544806 0.316853 -1.05209 0.316853 h -0.919967 v 1.458245 z m 0.4746676 -1.881529 h 0.927306 c 0.306652 0 0.524412 -0.05709 0.653274 -0.171272 0.128857 -0.114176 0.193288 -0.274848 0.193292 -0.482002 -4e-6 -0.150067 -0.03795 -0.278519 -0.113774 -0.38536 -0.07585 -0.106837 -0.175759 -0.177386 -0.299724 -0.211642 -0.07993 -0.02118 -0.227544 -0.0318 -0.442853 -0.0318 h -0.917521 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 6.1030445 32.796982 v -3.586898 h 1.2355937 c 0.2789242 4e-6 0.4917913 0.01713 0.6385966 0.05138 0.2055238 0.04731 0.3808684 0.132939 0.5260429 0.256904 0.1892111 0.159856 0.330714 0.364159 0.4245087 0.612904 0.093786 0.248754 0.140683 0.532981 0.1406875 0.852685 -4.5e-6 0.272401 -0.031796 0.513811 -0.095426 0.724228 -0.063615 0.21042 -0.1451745 0.384544 -0.244668 0.522376 -0.099507 0.137831 -0.2083845 0.246303 -0.3266415 0.325411 -0.1182569 0.07911 -0.2609852 0.139057 -0.4281757 0.179836 -0.1671951 0.04077 -0.3592624 0.06117 -0.576202 0.06117 z m 0.4746632 -0.423284 h 0.7658275 c 0.2365139 0 0.4220579 -0.022 0.5566276 -0.06606 0.1345696 -0.04405 0.2418163 -0.106026 0.3217445 -0.185954 0.1125445 -0.112545 0.2002214 -0.263837 0.2630215 -0.453864 0.062796 -0.190031 0.094195 -0.420427 0.0942 -0.691202 -4.6e-6 -0.37516 -0.061579 -0.663464 -0.1847286 -0.864915 -0.123154 -0.201442 -0.272811 -0.336422 -0.448971 -0.40493 -0.1272355 -0.04893 -0.3319439 -0.0734 -0.6141298 -0.07341 H 6.5777077 Z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FFFFFFFF" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="M 9.7193016 32.796982 V 29.210084 H 10.2062 l 1.883976 2.816178 v -2.816178 h 0.455088 v 3.586898 H 12.058366 L 10.17439 29.978358 v 2.818624 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="{StaticResource radialGradient3453-8}" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 29.335344 -19.135673 c -10.783798 0 -21.5670863 4.114394 -29.79484917 12.3421342 -16.45552583 16.4555258 -16.45552583 43.1341728 0 59.5897298 16.45552617 16.455526 43.13417717 16.455526 59.58969817 0 16.455526 -16.455557 16.455526 -43.134204 0 -59.5897298 C 50.902435 -15.021279 40.119147 -19.135673 29.335344 -19.135673 Z m 0 7.971866 c 18.868888 0 34.16514 15.2962344 34.16514 34.16514 0 18.86886 -15.296252 34.165172 -34.16514 34.165172 -18.868883 0 -34.16514 -15.296312 -34.16514 -34.165172 0 -18.8689056 15.296257 -34.16514 34.16514 -34.16514 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="#FF323232" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 65.089783 -12.753356 c -19.746627 -19.746631 -51.762237 -19.746631 -71.5088684 0 -19.7466356 19.7466356 -19.7466396 51.762251 -9.1e-6 71.508904 19.7466305 19.746586 51.7622465 19.746586 71.5088775 -4.5e-5 19.74663 -19.746617 19.74663 -51.762228 0 -71.508859 z m -0.483168 0.483168 c 19.479783 19.479783 19.479783 51.062754 0 70.54255 -19.479793 19.479779 -51.062759 19.479779 -70.5425416 0 -19.4797834 -19.479787 -19.4797874 -51.0627533 9.1e-6 -70.54255 19.4797835 -19.479783 51.0627495 -19.479783 70.5425325 0 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="{StaticResource linearGradient8140}" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 64.767664 -12.431288 c -19.568735 -19.568699 -51.295923 -19.568699 -70.864645 0 -19.568763 19.56879 -19.568745 51.295951 -1.37e-5 70.864682 19.5687357 19.568744 51.2958967 19.56879 70.8646587 0 19.568722 -19.568731 19.568731 -51.2959375 0 -70.864682 z m -1.127394 1.127404 c 18.946087 18.9460735 18.946087 49.663769 0 68.609874 -18.946115 18.946119 -49.663783 18.946119 -68.6098698 0 -18.9460822 -18.946105 -18.9461052 -49.663755 4.6e-6 -68.609874 18.9460822 -18.946073 49.6637732 -18.946073 68.6098652 0 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="{StaticResource linearGradient8142}" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 61.868652 -9.5322256 c -17.967675 -17.9676744 -47.098978 -17.9676744 -65.0666435 0 -17.9676525 17.9676294 -17.9676615 47.0989686 0 65.0665936 17.9676705 17.967675 47.0989825 17.967629 65.0666435 0 17.967648 -17.967579 17.967661 -47.0989642 0 -65.0665936 z m -2.899012 2.8989805 c 16.366578 16.3666053 16.366578 42.9020771 0 59.2686781 -16.366565 16.366469 -42.902041 16.366469 -59.26861913 0 -16.36658287 -16.366601 -16.36656387 -42.9021183 0 -59.2686781 16.36657813 -16.3665599 42.90204113 -16.3665599 59.26861913 0 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                            <Path   Fill="{StaticResource linearGradient8144}" StrokeThickness="0.455535">
+                                <Path.Data>
+                                    <PathGeometry Figures="m 29.338405 -25.726215 c -12.474239 0 -24.9607778 4.760639 -34.4783203 14.278182 C -22.631374 6.0434249 -24.0367 33.51473 -9.3820868 52.625821 c 0.032799 0.04328 0.066485 0.08518 0.099648 0.128142 0.1242245 0.160941 0.2435291 0.32425 0.3701224 0.484006 0.1304197 0.164813 0.2518882 0.335183 0.3843578 0.498219 0.2725012 0.33491 0.5571423 0.667223 0.839893 0.996484 0.00866 0.01002 0.019861 0.01959 0.028471 0.02824 0.2611583 0.303614 0.5274186 0.598254 0.7971866 0.896857 0.108144 0.119806 0.2181786 0.237198 0.3274159 0.35591 0.1739689 0.188819 0.3492816 0.382741 0.5267126 0.569419 0.064823 0.06819 0.1341095 0.131468 0.1992966 0.199297 0.2247155 0.233735 0.4387943 0.467242 0.6690673 0.697515 0.045098 0.0451 0.097348 0.0835 0.1423548 0.128142 0.1622161 0.160941 0.3195579 0.325298 0.4840061 0.484006 0.2109128 0.20367 0.4269049 0.398822 0.6405964 0.59789 0.026831 0.02551 0.058217 0.04596 0.085413 0.07115 0.1862228 0.172739 0.3669564 0.343155 0.5551835 0.512477 0.2814752 0.252913 0.566868 0.50815 0.8541285 0.754503 0.285165 0.244531 0.5775503 0.487969 0.868364 0.725986 0.028744 0.02323 0.056896 0.04792 0.085413 0.0712 0.2312752 0.188409 0.46275545 0.370942 0.6975383 0.55516 0.29851221 0.234419 0.59413178 0.471115 0.89683492 0.697561 0.0919726 0.06883 0.17800038 0.145316 0.27047403 0.21351 0.0218657 0.0164 0.0490839 0.02642 0.0711774 0.04282 0.31732582 0.233097 0.64481005 0.457859 0.96801225 0.683303 0.3440658 0.240204 0.6903864 0.481546 1.0391897 0.711774 0.031888 0.02095 0.06767 0.03599 0.099648 0.05694 0.7738177 0.508377 1.5535345 0.992383 2.3488534 1.452018 0.3976367 0.229863 0.7932234 0.451435 1.1957799 0.669045 0.4100728 0.221663 0.8235393 0.431574 1.2384863 0.640619 0.1098296 0.05539 0.217222 0.116389 0.3274159 0.170825 0.3032954 0.150236 0.6042675 0.297192 0.9110704 0.441277 0.4172247 0.195562 0.8312607 0.38634 1.2527218 0.569419 h 0.014213 c 0.359782 0.156158 0.719199 0.308489 1.081896 0.455536 0.06715 0.02733 0.13206 0.05845 0.199297 0.08541 0.300425 0.120216 0.608914 0.227631 0.91107 0.341652 0.296417 0.112061 0.597731 0.221025 0.896835 0.327438 0.118758 0.04237 0.236947 0.08692 0.355887 0.128097 0.325207 0.112882 0.653944 0.221299 0.982248 0.327439 0.373858 0.120899 0.746918 0.243848 1.124602 0.355864 0.0292 0.0087 0.0564 0.02004 0.08541 0.02824 0.321836 0.0948 0.643398 0.182214 0.968012 0.270497 0.402284 0.109192 0.805592 0.214466 1.210016 0.31318 0.307805 0.07525 0.615314 0.144132 0.925306 0.21351 0.09489 0.02095 0.189821 0.05056 0.284709 0.0712 0.361877 0.07867 0.731339 0.142947 1.096132 0.213509 0.344885 0.06669 0.691753 0.139895 1.039189 0.199297 0.03781 0.0064 0.07626 0.0077 0.113884 0.01412 0.299378 0.05047 0.595635 0.09739 0.896835 0.142355 0.212963 0.03189 0.427315 0.05635 0.640597 0.08541 0.643079 0.08728 1.285292 0.16586 1.936024 0.227768 0.293365 0.02779 0.587777 0.04847 0.8826 0.07115 0.09498 0.0073 0.189776 0.02369 0.284709 0.02824 0.03785 0.0046 0.07612 -0.0046 0.113884 0 0.26995 0.01868 0.540333 0.04282 0.811422 0.05694 0.08072 0.0046 0.161282 -0.0046 0.242003 0 0.288673 0.01367 0.578416 0.0059 0.868364 0.01412 0.489518 0.01458 0.990789 0.02824 1.480489 0.02824 0.489701 0 0.976782 -0.01549 1.466254 -0.02824 0.370852 -0.01093 0.741748 -0.02323 1.110367 -0.04282 0.271135 -0.01412 0.541518 -0.03826 0.811422 -0.05694 0.03781 -0.0046 0.07608 0.0046 0.113884 0 0.09516 -0.0068 0.189731 -0.0068 0.28471 -0.01412 0.293911 -0.02278 0.589052 -0.04328 0.882599 -0.0712 0.640665 -0.06095 1.27436 -0.12796 1.907554 -0.21351 0.575842 -0.07781 1.15321 -0.172738 1.722492 -0.270496 0.338281 -0.05804 0.674853 -0.120034 1.010719 -0.185039 0.25387 -0.04915 0.501294 -0.08915 0.75448 -0.142354 0.205993 -0.04328 0.407044 -0.09648 0.612126 -0.142355 0.688632 -0.154062 1.381478 -0.328259 2.064144 -0.512477 0.377 -0.101858 0.751291 -0.202577 1.124602 -0.313181 0.382194 -0.113246 0.760607 -0.233598 1.138838 -0.355909 0.358643 -0.115934 0.712799 -0.231868 1.067661 -0.355865 0.03877 -0.01367 0.07548 -0.04328 0.113883 -0.05694 0.213464 -0.07498 0.427999 -0.149689 0.640597 -0.227768 0.133654 -0.0492 0.265486 -0.106276 0.398593 -0.156613 0.302202 -0.11402 0.610691 -0.221436 0.911071 -0.341651 0.06724 -0.02688 0.132196 -0.05813 0.199296 -0.08541 0.06291 -0.02551 0.122289 -0.05963 0.185061 -0.08541 0.670138 -0.27569 1.338272 -0.549877 1.992967 -0.854129 0.05731 -0.02642 0.113747 -0.05863 0.170826 -0.08541 0.304069 -0.142765 0.610599 -0.292454 0.91107 -0.441277 0.11402 -0.05635 0.228041 -0.11352 0.341651 -0.170826 0.243074 -0.122676 0.485305 -0.243484 0.72601 -0.370122 0.167454 -0.08805 0.331606 -0.180347 0.498241 -0.270497 0.184811 -0.09999 0.371831 -0.196564 0.555184 -0.298922 0.219613 -0.122448 0.436721 -0.244031 0.654832 -0.370123 0.398274 -0.23041 0.790513 -0.470522 1.181544 -0.711774 0.765436 -0.472207 1.51946 -0.961999 2.263441 -1.480489 0.01093 -0.0073 0.01799 -0.0082 0.02847 -0.01412 0.323156 -0.225444 0.65064 -0.450251 0.968012 -0.683302 0.05175 -0.03781 0.104978 -0.07562 0.15659 -0.113884 0.276282 -0.20449 0.553931 -0.416177 0.825658 -0.626361 0.09038 -0.06992 0.180505 -0.142856 0.270474 -0.213509 0.234782 -0.184219 0.466308 -0.366752 0.697538 -0.555207 0.01822 -0.01503 0.03877 -0.02779 0.05694 -0.04282 0.300152 -0.245215 0.58846 -0.502319 0.882599 -0.754503 0.288491 -0.247401 0.571469 -0.500496 0.854129 -0.754457 0.02774 -0.0246 0.05794 -0.04637 0.08541 -0.0712 0.183216 -0.165495 0.359736 -0.329443 0.540948 -0.498218 0.123085 -0.114522 0.248312 -0.2259 0.370122 -0.341652 0.206995 -0.1967 0.422144 -0.396862 0.626361 -0.59789 0.09521 -0.09361 0.190368 -0.190368 0.284709 -0.284709 0.232688 -0.232642 0.456401 -0.461412 0.683303 -0.697561 0.06341 -0.06592 0.122061 -0.133017 0.185061 -0.199297 0.248905 -0.261842 0.498265 -0.5312 0.740245 -0.797187 0.03827 -0.04236 0.07557 -0.08569 0.113884 -0.128096 0.269813 -0.298649 0.536074 -0.593243 0.797186 -0.896858 0.0087 -0.01002 0.01982 -0.0055 0.02847 -0.01412 0.289402 -0.337051 0.575432 -0.681982 0.854129 -1.024955 0.239429 -0.295095 0.479132 -0.596067 0.711774 -0.896857 0.04765 -0.0615 0.09507 -0.123359 0.142354 -0.185039 C 82.713532 33.513979 81.29397 6.0426733 63.802467 -11.448785 54.28497 -20.966282 41.812622 -25.726967 29.338382 -25.726967 Z m 0 2.946743 c 0.36651 0 0.731676 0.0057 1.096132 0.01421 0.02838 4.56e-4 0.05703 -9.11e-4 0.08541 0 0.337556 0.0087 0.673381 0.0266 1.010718 0.04268 0.733321 0.03467 1.468368 0.0878 2.192263 0.15659 0.09923 0.0095 0.199757 0.01831 0.298945 0.02847 1.373845 0.139521 2.721905 0.339606 4.057111 0.59789 1.459617 0.28235 2.892503 0.635973 4.299113 1.053425 0.353924 0.104769 0.70162 0.213915 1.053425 0.327416 0.352566 0.11402 0.704663 0.233603 1.053426 0.355887 0.699847 0.245383 1.394539 0.504997 2.078379 0.782951 0.34443 0.13969 0.697556 0.278646 1.03919 0.427064 0.04848 0.02109 0.09396 0.0499 0.142354 0.07118 0.637103 0.28004 1.257569 0.574767 1.879083 0.882599 0.338144 0.167482 0.677367 0.33695 1.010719 0.512477 0.328737 0.173099 0.658298 0.345911 0.982248 0.526713 0.329566 0.183936 0.657765 0.377638 0.982247 0.569419 0.474181 0.280136 0.943327 0.56966 1.409312 0.868364 0.258895 0.165956 0.526713 0.326555 0.782951 0.498241 0.04798 0.03216 0.09447 0.0673 0.142355 0.09965 0.425921 0.287748 0.851405 0.581058 1.266958 0.882599 0.178501 0.1296 0.349677 0.266101 0.526712 0.398593 0.09969 0.07455 0.199884 0.152422 0.298945 0.227768 0.100172 0.07627 0.19926 0.150563 0.298945 0.227768 0.307792 0.238076 0.609584 0.480334 0.91107 0.726009 0.30064 0.244987 0.602605 0.487846 0.896835 0.740244 0.05616 0.04817 0.114905 0.09391 0.170826 0.142355 0.549102 0.476107 1.091558 0.973916 1.622844 1.48049 0.267468 0.2550037 0.521711 0.5215966 0.782951 0.7829508 0.521278 0.521278 1.03233 1.040538 1.523196 1.5801377 0.246313 0.271007 0.48617 0.5345432 0.726009 0.8114221 0.01535 0.017675 0.02738 0.039222 0.04268 0.056942 0.223968 0.2593589 0.450871 0.5185585 0.669067 0.7829511 0.475465 0.5751815 0.923584 1.1728437 1.366606 1.7651989 0.01421 0.019041 0.02852 0.037901 0.04268 0.056942 0.211117 0.2836162 0.421707 0.5655105 0.626361 0.8541285 0.202517 0.285247 0.402688 0.5653511 0.597889 0.8541285 1.022495 1.5134929 1.951272 3.09118898 2.790154 4.7261777 0.315184 0.6148814 0.611323 1.2249843 0.896834 1.8506117 0.148382 0.3245188 0.286099 0.6537113 0.427065 0.9822478 0.11058 0.2581245 0.221798 0.5090105 0.327414 0.7687157 0.04395 0.107816 0.08497 0.2191898 0.12812 0.3274159 0.238714 0.600277 0.471 1.2000164 0.683302 1.8079053 0.01477 0.042183 0.02806 0.085891 0.04271 0.1281193 0.05481 0.1584488 0.10357 0.3250836 0.15659 0.4840061 0.09348 0.279521 0.182273 0.5579988 0.270474 0.8398931 0.155902 0.4992529 0.317139 0.9914268 0.455535 1.4947248 0.01814 0.06585 0.02485 0.13333 0.04271 0.199296 0.174274 0.643895 0.337456 1.295438 0.484006 1.950261 0.152836 0.682902 0.290886 1.370095 0.412829 2.064143 0.150795 0.856794 0.282586 1.714011 0.384357 2.576621 0.06329 0.539573 0.112231 1.091937 0.156591 1.63708 0.04514 0.551394 0.08865 1.098883 0.113883 1.651315 0.0097 0.214288 0.0075 0.425552 0.01424 0.640597 0.01738 0.548437 0.0307 1.10265 0.02847 1.651315 -5.47e-4 0.142701 -0.01237 0.284677 -0.01424 0.427064 -0.0034 0.257099 -0.0066 0.512655 -0.01423 0.768716 -0.02072 0.698376 -0.04799 1.388193 -0.09965 2.078379 -0.03053 0.4039 -0.07269 0.82112 -0.113884 1.224251 -0.02944 0.28987 -0.06483 0.580115 -0.09965 0.868364 -0.03502 0.288431 -0.07338 0.566276 -0.113883 0.854128 -0.01194 0.08528 -0.01607 0.171104 -0.02847 0.256239 -0.147908 1.01501 -0.327576 2.011425 -0.540948 3.003685 -0.207697 0.965858 -0.444193 1.91917 -0.711774 2.86133 -0.0095 0.03339 -0.01893 0.06628 -0.02847 0.09965 -0.0545 0.190263 -0.113929 0.380176 -0.170826 0.569419 -0.05403 0.180105 -0.114526 0.36139 -0.170825 0.540948 -0.105234 0.334809 -0.214744 0.66504 -0.327416 0.996483 -0.114317 0.33711 -0.219259 0.675818 -0.341652 1.010719 -0.214452 0.585695 -0.445882 1.162517 -0.683303 1.736728 -0.08824 0.213409 -0.179116 0.428827 -0.270472 0.640596 -0.165464 0.384153 -0.336003 0.772647 -0.512477 1.153074 -0.245611 0.528466 -0.503758 1.04861 -0.768716 1.565902 -0.120904 0.236391 -0.244841 0.477073 -0.370122 0.711774 -0.01002 0.01872 -0.01845 0.03827 -0.02847 0.05694 -0.107333 0.200395 -0.21689 0.398771 -0.327416 0.59789 -0.07932 0.142738 -0.1612 0.28527 -0.242003 0.427065 -0.149703 0.262944 -0.300207 0.52238 -0.455535 0.782951 -0.04227 0.07092 -0.08546 0.142865 -0.12812 0.213532 -0.143065 0.23706 -0.293556 0.476781 -0.441299 0.711774 -0.09036 0.143653 -0.178566 0.284495 -0.270474 0.427064 -0.178292 0.276642 -0.356097 0.552072 -0.540949 0.825657 -0.125618 0.185941 -0.256092 0.371202 -0.384357 0.555184 -0.160485 0.230182 -0.318802 0.455444 -0.484007 0.683285 -0.295551 0.407886 -0.60255 0.812447 -0.91107 1.210038 -0.279448 0.359599 -0.562477 0.728811 -0.854128 1.081896 -0.13903 0.168457 -0.285685 0.331812 -0.427065 0.498219 -8.397559 9.885432 -20.918445 16.157287 -34.905384 16.157287 -13.986944 0 -26.507826 -6.271855 -34.9053851 -16.157287 -0.00182 0 -0.012254 0.0046 -0.014213 0 -0.085285 -0.100309 -0.1719599 -0.198067 -0.2562385 -0.298922 -0.151839 -0.181941 -0.2922532 -0.370897 -0.4412997 -0.555207 -0.1334172 -0.164767 -0.2678092 -0.332039 -0.3985933 -0.498219 -0.058236 -0.07412 -0.1130411 -0.153287 -0.1708257 -0.227767 -0.169245 -0.217837 -0.3334791 -0.434717 -0.4982417 -0.654832 -0.089358 -0.119487 -0.1822641 -0.235512 -0.270474 -0.35591 -0.096696 -0.131877 -0.1896074 -0.265896 -0.2847095 -0.398575 -0.045326 -0.06325 -0.097352 -0.121573 -0.1423547 -0.185061 -0.1984539 -0.279849 -0.3922386 -0.570886 -0.5836545 -0.854129 -0.6217509 -0.920012 -1.2034466 -1.851304 -1.7509633 -2.804388 -0.05705 -0.09922 -0.114503 -0.199265 -0.170826 -0.298945 -0.124848 -0.221222 -0.24925 -0.446238 -0.370122 -0.669067 -0.176092 -0.324624 -0.344817 -0.654349 -0.512477 -0.982248 -0.04141 -0.08084 -0.08718 -0.160882 -0.128119 -0.242003 -0.126552 -0.251223 -0.248499 -0.501449 -0.370123 -0.75448 -0.03248 -0.06745 -0.06747 -0.131664 -0.09965 -0.199297 -0.05833 -0.122885 -0.113656 -0.246827 -0.170826 -0.370122 -0.09274 -0.199529 -0.180546 -0.396813 -0.270474 -0.59789 -0.125449 -0.281107 -0.250631 -0.571059 -0.370122 -0.854129 -0.01804 -0.04268 -0.03899 -0.08535 -0.05694 -0.128119 -0.115027 -0.27482 -0.232232 -0.549093 -0.341651 -0.825658 -0.01326 -0.03339 -0.02952 -0.06621 -0.04268 -0.09965 -0.02979 -0.07586 -0.05603 -0.151784 -0.08541 -0.227768 -0.104645 -0.269941 -0.199301 -0.53903 -0.298945 -0.811422 -0.127431 -0.349236 -0.251478 -0.701797 -0.370122 -1.053425 -0.218475 -0.647498 -0.423447 -1.295464 -0.612126 -1.95026 -0.01499 -0.05206 -0.02788 -0.104491 -0.04268 -0.15659 -0.01777 -0.06233 -0.03945 -0.12263 -0.05694 -0.185061 -0.07535 -0.269358 -0.143211 -0.540994 -0.213532 -0.811422 -0.05887 -0.225987 -0.115342 -0.455973 -0.170826 -0.683303 -0.02086 -0.08561 -0.05081 -0.17053 -0.07118 -0.256239 -0.0763 -0.320674 -0.144022 -0.64476 -0.213532 -0.968012 -0.03171 -0.147552 -0.06941 -0.293501 -0.09965 -0.4413 -0.02806 -0.13718 -0.05857 -0.275207 -0.08541 -0.412829 -0.03239 -0.165933 -0.0549 -0.332025 -0.08541 -0.498241 -0.02086 -0.113738 -0.0369 -0.227622 -0.05694 -0.341652 -0.04496 -0.255915 -0.08751 -0.512212 -0.12812 -0.768715 -0.02483 -0.157055 -0.04796 -0.312188 -0.07118 -0.469771 -0.01617 -0.10936 -0.02733 -0.217964 -0.04268 -0.327416 -0.08769 -0.626506 -0.16571 -1.258953 -0.227767 -1.893318 -0.03216 -0.327899 -0.07454 -0.668083 -0.09965 -0.996483 -0.0014 -0.01881 0.0014 -0.03808 0 -0.05694 -0.04177 -0.557821 -0.06383 -1.116572 -0.08541 -1.679786 -0.0077 -0.200103 -0.02337 -0.397719 -0.02847 -0.59789 -0.0071 -0.279143 -0.01216 -0.559529 -0.01421 -0.839893 -9.11e-4 -0.112804 -2.7e-5 -0.228847 0 -0.341652 9.1e-5 -0.392256 0.0041 -0.789392 0.01421 -1.181544 0.0049 -0.191466 0.0071 -0.378545 0.01421 -0.569419 0.0046 -0.118949 0.0087 -0.236969 0.01421 -0.355887 0.01039 -0.228792 0.02897 -0.455398 0.04268 -0.683303 0.01476 -0.242472 0.0241 -0.483755 0.04268 -0.726009 0.0061 -0.08049 0.02191 -0.161624 0.02847 -0.242003 0.02537 -0.308857 0.05378 -0.616918 0.08541 -0.925306 0.0062 -0.06152 0.0077 -0.123614 0.01421 -0.185061 0.01868 -0.175162 0.03626 -0.351737 0.05694 -0.526713 0.02004 -0.171007 0.04924 -0.342052 0.07118 -0.512477 0.04602 -0.354807 0.08802 -0.713801 0.142355 -1.06766 0.05135 -0.33609 0.112203 -0.66284 0.170826 -0.996484 0.121942 -0.694048 0.259992 -1.381241 0.412828 -2.064143 0.146551 -0.654823 0.309728 -1.306366 0.484006 -1.950261 0.01763 -0.06523 0.02478 -0.134127 0.04268 -0.199296 0.08315 -0.301833 0.181326 -0.597535 0.270474 -0.8968349 0.05258 -0.1768069 0.101826 -0.350425 0.15659 -0.5267126 0.04924 -0.1582984 0.105685 -0.3122101 0.156591 -0.4697706 0.06352 -0.1968732 0.118799 -0.4017229 0.185061 -0.59789 0.043 -0.1271125 0.08402 -0.2577509 0.128119 -0.3843578 0.0084 -0.024143 0.02004 -0.047039 0.02847 -0.071177 0.10993 -0.3139229 0.225116 -0.6287843 0.341651 -0.9395413 0.08812 -0.2352293 0.178347 -0.4777289 0.270474 -0.7117738 0.02091 -0.053015 0.05008 -0.1036707 0.07118 -0.1565902 0.04337 -0.1089822 0.08388 -0.2187025 0.128119 -0.3274159 0.104659 -0.2567761 0.218247 -0.5142947 0.327416 -0.7687157 0.140965 -0.3285365 0.278683 -0.657729 0.427064 -0.9822478 0.126862 -0.2778354 0.251642 -0.549881 0.384358 -0.8256575 0.02114 -0.043823 0.04992 -0.084356 0.07118 -0.1281193 0.141189 -0.2909685 0.279348 -0.5798188 0.427065 -0.868364 0.0048 -0.00948 0.0094 -0.019041 0.01421 -0.028471 0.02984 -0.058204 0.06953 -0.1127222 0.09965 -0.1708257 0.145721 -0.2810106 0.289957 -0.5623218 0.441299 -0.839893 0.165797 -0.30434765 0.325025 -0.60975211 0.498242 -0.91107043 0.0052 -0.009111 0.009 -0.0193602 0.01421 -0.0284709 0.178756 -0.31044724 0.3685457 -0.61822504 0.555183 -0.92530587 0.1877443 -0.3089896 0.3746185 -0.6069369 0.569419 -0.9110705 0.00364 -0.00547 0.010705 -0.00875 0.014213 -0.014213 0.192787 -0.3007078 0.3840799 -0.600983 0.5836545 -0.8968349 0.00592 -0.00879 0.00829 -0.019679 0.014213 -0.028471 0.1939486 -0.2870829 0.3976457 -0.5717286 0.5978899 -0.8541285 0.2046492 -0.288618 0.4152431 -0.5705123 0.6263609 -0.8541285 0.014122 -0.01895 0.028562 -0.037992 0.042684 -0.056942 0.2116598 -0.2834295 0.4225772 -0.5758193 0.6405963 -0.8541285 0.014577 -0.018586 0.028107 -0.038402 0.042684 -0.056942 0.6732172 -0.8566659 1.3753929 -1.6711036 2.1068503 -2.4769727 0.00688 -0.00756 0.00733 -0.020909 0.014213 -0.028471 0.2395204 -0.2635362 0.4947112 -0.5250818 0.7402447 -0.7829512 0.00697 -0.00733 0.00724 -0.021137 0.014213 -0.028471 0.2503257 -0.2625568 0.5122675 -0.5121582 0.7687156 -0.7687157 0.2612358 -0.2613542 0.5154837 -0.527947 0.7829512 -0.7829512 0.012117 -0.01157 0.030566 -0.01694 0.042684 -0.02847 0.2583477 -0.245993 0.5060905 -0.48719 0.7687156 -0.726009 0.017629 -0.01604 0.039267 -0.02669 0.056942 -0.04268 0.83904578 -0.760225 1.69694155 -1.480941 2.5908565 -2.178028 0.2436567 -0.190327 0.4936635 -0.384704 0.7402447 -0.569419 0.051753 -0.03872 0.1046638 -0.07539 0.1565902 -0.113884 0.5375498 -0.398484 1.0818187 -0.792185 1.6370796 -1.167309 0.037126 -0.02505 0.076694 -0.04621 0.1138838 -0.07118 0.5346025 -0.359272 1.0768579 -0.704859 1.6228442 -1.03919 0.053038 -0.03243 0.1034065 -0.06742 0.1565902 -0.09965 0.2320588 -0.140811 0.4635481 -0.276506 0.6975383 -0.412829 0.086082 -0.05012 0.1697962 -0.107014 0.2562385 -0.15659 0.1359591 -0.07801 0.2762411 -0.151265 0.4128288 -0.227768 0.2256084 -0.126329 0.455353 -0.247524 0.6833028 -0.370122 0.2732164 -0.147001 0.5358962 -0.286008 0.8114221 -0.427064 0.047002 -0.02405 0.095257 -0.04726 0.1423547 -0.07118 0.2823727 -0.143302 0.5694555 -0.289984 0.8541285 -0.427064 0.042456 -0.02045 0.085604 -0.03663 0.1281193 -0.05694 0.2901987 -0.138651 0.5759008 -0.280637 0.8683638 -0.412829 0.03681 -0.01663 0.07703 -0.02615 0.113884 -0.04268 0.30238 -0.135704 0.606408 -0.269782 0.91107 -0.398594 0.02738 -0.01157 0.05802 -0.01695 0.08541 -0.02847 0.318529 -0.133941 0.632903 -0.272177 0.953777 -0.398593 0.01398 -0.0055 0.0287 -0.0087 0.04268 -0.01421 0.330791 -0.129946 0.66335 -0.262406 0.996483 -0.384357 0.303077 -0.110973 0.619264 -0.208472 0.925306 -0.313181 0.03426 -0.01171 0.06537 -0.03107 0.09965 -0.04268 0.340053 -0.115446 0.681362 -0.219795 1.024954 -0.327415 0.0287 -0.009 0.05671 -0.01954 0.08541 -0.02847 0.268461 -0.0835 0.540862 -0.163337 0.811422 -0.242003 0.04323 -0.01257 0.08484 -0.03025 0.12812 -0.04268 0.346812 -0.09973 0.689051 -0.193015 1.039189 -0.28471 0.343123 -0.08985 0.69297 -0.174196 1.03919 -0.256238 0.340936 -0.08079 0.681116 -0.168885 1.024954 -0.242003 0.236405 -0.05027 0.47403 -0.09575 0.711774 -0.142355 0.221905 -0.04364 0.446657 -0.08777 0.669067 -0.128119 0.06156 -0.01112 0.123414 -0.01758 0.185061 -0.02847 0.312548 -0.05538 0.62612 -0.107739 0.939542 -0.15659 0.06657 -0.0103 0.132629 -0.01845 0.199296 -0.02847 0.26616 -0.04027 0.530485 -0.07831 0.797187 -0.113884 0.189275 -0.02501 0.379415 -0.04847 0.569419 -0.07118 0.228542 -0.02756 0.454442 -0.04706 0.683303 -0.07118 0.04273 -0.0046 0.08537 -0.0099 0.128119 -0.01421 0.204198 -0.02095 0.407713 -0.03877 0.612125 -0.05694 0.282605 -0.02492 0.570071 -0.05141 0.854129 -0.07118 0.287894 -0.02023 0.580201 -0.04214 0.868364 -0.05694 0.0667 -0.0032 0.132524 -0.01116 0.199297 -0.01421 0.244185 -0.01148 0.481701 -0.0067 0.726009 -0.01421 0.109711 -0.0032 0.217509 -0.01166 0.327416 -0.01421 0.364451 -0.0086 0.729617 -0.01421 1.096131 -0.01421 z" FillRule="NonZero"/>
+                                </Path.Data>
+                            </Path>
+                        </Canvas>
+                    </Canvas>
+                </Viewbox>
+                <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" x:Name="aiguille" Stretch="Uniform" Width="95" Height="95" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                    <Viewbox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-5.551"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Viewbox.RenderTransform>
+                    <Canvas  Width="143.67695" Height="143.67696">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="0" Y="0"/>
+                        </Canvas.RenderTransform>
+                        <Canvas.Resources>
+                            <LinearGradientBrush  x:Key="linearGradient4241-1" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#00000000" Offset="0"/>
+                                        <GradientStop Color="#00000000" Offset="0.1875"/>
+                                        <GradientStop Color="#00000000" Offset="0.375"/>
+                                        <GradientStop Color="#00000000" Offset="0.75"/>
+                                        <GradientStop Color="#00000000" Offset="0.875"/>
+                                        <GradientStop Color="#32000000" Offset="0.9375"/>
+                                        <GradientStop Color="#64000000" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                            <LinearGradientBrush  x:Key="linearGradient4008-1" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FF505050" Offset="0"/>
+                                        <GradientStop Color="#FF282828" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                            <LinearGradientBrush  x:Key="linearGradient4008-5-7-2" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FF111111" Offset="0"/>
+                                        <GradientStop Color="#FF646464" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                            <LinearGradientBrush  x:Key="linearGradient4008-5-1" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FF0F0F0F" Offset="0"/>
+                                        <GradientStop Color="#FF505050" Offset="1"/>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </Canvas.Resources>
+                        <!--Unknown tag: sodipodi:namedview-->
+                        <!--Unknown tag: metadata-->
+                        <Canvas >
+                            <Canvas.RenderTransform>
+                                <TranslateTransform X="42.503134" Y="48.837405"/>
+                            </Canvas.RenderTransform>
+                            <Canvas >
+                                <Canvas.RenderTransform>
+                                    <MatrixTransform Matrix="0 -0.83010618 0.83010618 0 -744.58007 122.61384"/>
+                                </Canvas.RenderTransform>
+                                <Path   Fill="#FFFFFFFF" StrokeThickness="0.3" Stroke="#FF323232" StrokeMiterLimit="4">
+                                    <Path.Data>
+                                        <PathGeometry Figures="m 123.06603 880.23958 -1.83962 -3.18102 V 849.5792 l -1.22642 -3.37264 -1.22641 3.37264 v 27.40271 l -1.83962 3.20018 v 0.0575 42.92453 h 6.13207 v -42.92453 z" FillRule="NonZero"/>
+                                    </Path.Data>
+                                </Path>
+                                <Rectangle  Canvas.Left="923.16406" Canvas.Top="-123.06604" Width="9.1981134" Height="6.1320772"  Fill="#FF1E1E1E" StrokeThickness="0.3" Stroke="#FF323232" StrokeMiterLimit="4" Visibility="Hidden">
+                                    <Rectangle.RenderTransform>
+                                        <RotateTransform Angle="90"/>
+                                    </Rectangle.RenderTransform>
+                                </Rectangle>
+                                <Path   Fill="#FF1E1E1E" StrokeThickness="0.3" Stroke="#FF323232" StrokeMiterLimit="4">
+                                    <Path.Data>
+                                        <PathGeometry Figures="m 127.05188 969.15467 c 0 -2.79158 -1.6328 -5.2001 -3.98585 -6.34286 v -27.90095 c 0.5787 -0.69189 0.91981 -1.57609 0.91981 -2.54864 0 -2.20132 -1.78452 -3.98585 -3.98585 -3.98585 -2.20132 0 -3.98584 1.78453 -3.98584 3.98585 0 0.97255 0.3411 1.85675 0.91981 2.54864 v 27.90095 c -2.35305 1.14276 -3.98585 3.55128 -3.98585 6.34286 0 3.89465 3.15724 7.05189 7.05188 7.05189 3.89465 0 7.05189 -3.15724 7.05189 -7.05189 z" FillRule="NonZero"/>
+                                    </Path.Data>
+                                </Path>
+                                <Ellipse  Canvas.Left="220.2" Width="2.2" Canvas.Top="221.2" Height="2.1"  Fill="#FF323232">
+                                    <Ellipse.RenderTransform>
+                                        <MatrixTransform Matrix="0 0.54674655 -0.57278209 0 247.28436 811.33735"/>
+                                    </Ellipse.RenderTransform>
+                                </Ellipse>
+                            </Canvas>
+                        </Canvas>
+                    </Canvas>
+                </Viewbox>
+
+            </Grid>
+        </Viewbox>
+
+    </Grid>
+    
+</UserControl>

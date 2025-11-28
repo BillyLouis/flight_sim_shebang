@@ -1,0 +1,500 @@
+[2023-12-29 21:34:37.285] [0001] .NET Standard build
+[2023-12-29 21:34:37.286] [0001] Executing assembly: WinSCPnet, Version=1.14.0.13797, Culture=neutral, PublicKeyToken=2271ec4a3c56d0bf
+[2023-12-29 21:34:37.286] [0001] Executing assembly codebase: file:///C:/Users/Alienware/Desktop/Other/DevWithVisualStudio2019/DX12_ProjectHome/HomePage1V3JoystickGauges/HomePage/bin/Debug/netcoreapp3.1/WinSCPnet.dll
+[2023-12-29 21:34:37.286] [0001] Executing assembly location: C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1\WinSCPnet.dll
+[2023-12-29 21:34:37.286] [0001] Entry Assembly: HomePage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+[2023-12-29 21:34:37.286] [0001] Operating system: Microsoft Windows NT 6.2.9200.0
+[2023-12-29 21:34:37.286] [0001] Operating system information: Microsoft Windows 10.0.19043 X64 X64
+[2023-12-29 21:34:37.286] [0001] Bitness: 64-bit
+[2023-12-29 21:34:37.287] [0001] Timezone: -08:00; Pacific Standard Time
+[2023-12-29 21:34:37.289] [0001] User: Alienware@DESKTOP-P9SLO10@DESKTOP-P9SLO10; Interactive: True
+[2023-12-29 21:34:37.290] [0001] Runtime: 3.1.32
+[2023-12-29 21:34:37.290] [0001] Framework description: .NET Core 3.1.32
+[2023-12-29 21:34:37.290] [0001] Console encoding: Input: Codepage - 0 (0); Output: Codepage - 0 (0)
+[2023-12-29 21:34:37.290] [0001] Working directory: C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1
+[2023-12-29 21:34:37.292] [0001] Assembly path: C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1\WinSCPnet.dll
+[2023-12-29 21:34:37.292] [0001] Assembly product version: 6.1.2.0
+[2023-12-29 21:34:37.292] [0001] Entry assembly path: C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1\HomePage.dll
+[2023-12-29 21:34:37.296] [0001] Session.Open entering
+[2023-12-29 21:34:37.298] [0001]   Session.SetupTempPath entering
+[2023-12-29 21:34:37.298] [0001]     Temporary folder: C:\Users\Alienware\AppData\Local\Temp\
+[2023-12-29 21:34:37.298] [0001]     Temporary file [C:\Users\Alienware\AppData\Local\Temp\wscp2A30.0112F14F.tmp] - Exists [False]
+[2023-12-29 21:34:37.298] [0001]   Session.SetupTempPath leaving
+[2023-12-29 21:34:37.299] [0001]   ExeSessionProcess..ctor entering
+[2023-12-29 21:34:37.299] [0001]     ExeSessionProcess.GetExecutablePath entering
+[2023-12-29 21:34:37.299] [0001]       Executable found in C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1\winscp.exe
+[2023-12-29 21:34:37.300] [0001]       Executable found in C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1\winscp.exe
+[2023-12-29 21:34:37.300] [0001]     ExeSessionProcess.GetExecutablePath leaving
+[2023-12-29 21:34:37.300] [0001]     EXE executable path resolved to C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1\winscp.exe
+[2023-12-29 21:34:37.307] [0001]     ExeSessionProcess.CheckVersion entering
+[2023-12-29 21:34:37.307] [0001]       Timestamp of C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1\winscp.exe is 9/19/2023 1:42:52 PM
+[2023-12-29 21:34:37.307] [0001]       Executable version is not cached yet, cache size is 0
+[2023-12-29 21:34:37.308] [0001]       Version of C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1\winscp.exe is 6.1.2.13797, product WinSCP version is 6.1.2.0
+[2023-12-29 21:34:37.308] [0001]       Size of the executable file is 24474656
+[2023-12-29 21:34:37.308] [0001]       Size of the executable file version info is 1772
+[2023-12-29 21:34:37.308] [0001]       Caching executable version
+[2023-12-29 21:34:37.308] [0001]     ExeSessionProcess.CheckVersion leaving
+[2023-12-29 21:34:37.309] [0001]   ExeSessionProcess..ctor leaving
+[2023-12-29 21:34:37.310] [0001]   ExeSessionProcess.Start entering
+[2023-12-29 21:34:37.311] [0001]     ExeSessionProcess.InitializeConsole entering
+[2023-12-29 21:34:37.311] [0001]       Trying event _10800_27950026_762
+[2023-12-29 21:34:37.311] [0001]       Creating event WinSCPConsoleEventRequest_10800_27950026_762
+[2023-12-29 21:34:37.311] [0001]       Created event WinSCPConsoleEventRequest_10800_27950026_762 with handle 3496 with security not impl, new True
+[2023-12-29 21:34:37.311] [0001]       Event _10800_27950026_762 is unique
+[2023-12-29 21:34:37.311] [0001]       Creating event WinSCPConsoleEventResponse_10800_27950026_762
+[2023-12-29 21:34:37.311] [0001]       Created event WinSCPConsoleEventResponse_10800_27950026_762 with handle 3500 with security not impl, new True
+[2023-12-29 21:34:37.311] [0001]       Creating event WinSCPConsoleEventCancel_10800_27950026_762
+[2023-12-29 21:34:37.311] [0001]       Created event WinSCPConsoleEventCancel_10800_27950026_762 with handle 3504 with security not impl, new True
+[2023-12-29 21:34:37.313] [0001]       Job created
+[2023-12-29 21:34:37.313] [0001]       Job set to kill all processes
+[2023-12-29 21:34:37.313] [0001]     ExeSessionProcess.InitializeConsole leaving
+[2023-12-29 21:34:37.314] [0001]     ExeSessionProcess.InitializeChild entering
+[2023-12-29 21:34:37.314] [0001]       Starting "C:\Users\Alienware\Desktop\Other\DevWithVisualStudio2019\DX12_ProjectHome\HomePage1V3JoystickGauges\HomePage\bin\Debug\netcoreapp3.1\winscp.exe" /xmllog="C:\Users\Alienware\AppData\Local\Temp\wscp2A30.0112F14F.tmp" /xmlgroups /xmllogrequired /nointeractiveinput /stdout /stdin /dotnet=6.1.2  /ini=nul  /console /consoleinstance=_10800_27950026_762
+[2023-12-29 21:34:37.330] [0001]       Started process 23652
+[2023-12-29 21:34:37.331] [0001]     ExeSessionProcess.InitializeChild leaving
+[2023-12-29 21:34:37.331] [0001]   ExeSessionProcess.Start leaving
+[2023-12-29 21:34:37.334] [0001]   Command: [option batch on]
+[2023-12-29 21:34:37.335] [0001]   ExeSessionProcess.ExecuteCommand entering
+[2023-12-29 21:34:37.335] [000c] ExeSessionProcess.ProcessEvents entering
+[2023-12-29 21:34:37.335] [0001]   ExeSessionProcess.ExecuteCommand leaving
+[2023-12-29 21:34:37.335] [0001]   Command: [option confirm off]
+[2023-12-29 21:34:37.336] [0001]   ExeSessionProcess.ExecuteCommand entering
+[2023-12-29 21:34:37.336] [0001]   ExeSessionProcess.ExecuteCommand leaving
+[2023-12-29 21:34:37.336] [0001]   Command: [option reconnecttime 120]
+[2023-12-29 21:34:37.336] [0001]   ExeSessionProcess.ExecuteCommand entering
+[2023-12-29 21:34:37.336] [0001]   ExeSessionProcess.ExecuteCommand leaving
+[2023-12-29 21:34:37.336] [0001]   Session.SessionOptionsToUrlAndSwitches entering
+[2023-12-29 21:34:37.337] [0001]     Session.SessionOptionsToSwitches entering
+[2023-12-29 21:34:37.338] [0001]       WARNING! Giving up security and accepting any key as configured
+[2023-12-29 21:34:37.338] [0001]     Session.SessionOptionsToSwitches leaving
+[2023-12-29 21:34:37.338] [0001]   Session.SessionOptionsToUrlAndSwitches leaving
+[2023-12-29 21:34:37.338] [0001]   Command: [open "sftp://pi:***@192.168.1.3:22" -hostkey="*" -timeout=15]
+[2023-12-29 21:34:37.338] [0001]   ExeSessionProcess.ExecuteCommand entering
+[2023-12-29 21:34:37.338] [0001]   ExeSessionProcess.ExecuteCommand leaving
+[2023-12-29 21:34:37.338] [0001]   Waiting for XML log file
+[2023-12-29 21:34:37.883] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.884] [000c]     ExeSessionProcess.ProcessInitEvent entering
+[2023-12-29 21:34:37.884] [000c]     ExeSessionProcess.ProcessInitEvent leaving
+[2023-12-29 21:34:37.884] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.885] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.885] [000c]     ExeSessionProcess.ProcessTitleEvent entering
+[2023-12-29 21:34:37.885] [000c]       Not-supported title event [WinSCP]
+[2023-12-29 21:34:37.885] [000c]     ExeSessionProcess.ProcessTitleEvent leaving
+[2023-12-29 21:34:37.885] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.885] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.886] [000c]     ExeSessionProcess.ProcessTitleEvent entering
+[2023-12-29 21:34:37.886] [000c]       Not-supported title event [WinSCP]
+[2023-12-29 21:34:37.886] [000c]     ExeSessionProcess.ProcessTitleEvent leaving
+[2023-12-29 21:34:37.886] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.886] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.886] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.887] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.887] [000c]     ExeSessionProcess.ProcessInputEvent entering
+[2023-12-29 21:34:37.887] [000c]       Scheduling output: [winscp> option batch on]
+[2023-12-29 21:34:37.888] [000c]     ExeSessionProcess.ProcessInputEvent leaving
+[2023-12-29 21:34:37.888] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.888] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.888] [000c]     Scheduling output: [batch           on        ]
+[2023-12-29 21:34:37.888] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.888] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.888] [000c]     Scheduling output: [reconnecttime   120       ]
+[2023-12-29 21:34:37.888] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.888] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.888] [000c]     ExeSessionProcess.ProcessTitleEvent entering
+[2023-12-29 21:34:37.888] [000c]       Not-supported title event [WinSCP]
+[2023-12-29 21:34:37.888] [000c]     ExeSessionProcess.ProcessTitleEvent leaving
+[2023-12-29 21:34:37.888] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.888] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.888] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.889] [000c]     ExeSessionProcess.ProcessInputEvent entering
+[2023-12-29 21:34:37.889] [000c]       Scheduling output: [winscp> option confirm off]
+[2023-12-29 21:34:37.889] [000c]     ExeSessionProcess.ProcessInputEvent leaving
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.889] [000c]     Scheduling output: [confirm         off       ]
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.889] [000c]     ExeSessionProcess.ProcessTitleEvent entering
+[2023-12-29 21:34:37.889] [000c]       Not-supported title event [WinSCP]
+[2023-12-29 21:34:37.889] [000c]     ExeSessionProcess.ProcessTitleEvent leaving
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.889] [000c]     ExeSessionProcess.ProcessInputEvent entering
+[2023-12-29 21:34:37.889] [000c]       Scheduling output: [winscp> option reconnecttime 120]
+[2023-12-29 21:34:37.889] [000c]     ExeSessionProcess.ProcessInputEvent leaving
+[2023-12-29 21:34:37.889] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.890] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.890] [000c]     Scheduling output: [reconnecttime   120       ]
+[2023-12-29 21:34:37.890] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.890] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.890] [000c]     ExeSessionProcess.ProcessTitleEvent entering
+[2023-12-29 21:34:37.890] [000c]       Not-supported title event [WinSCP]
+[2023-12-29 21:34:37.890] [000c]     ExeSessionProcess.ProcessTitleEvent leaving
+[2023-12-29 21:34:37.890] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.890] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.890] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.890] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.890] [000c]     ExeSessionProcess.ProcessInputEvent entering
+[2023-12-29 21:34:37.890] [000c]       Scheduling output: [winscp> open "sftp://pi:***@192.168.1.3:22" -hostkey="*" -timeout=15]
+[2023-12-29 21:34:37.890] [000c]     ExeSessionProcess.ProcessInputEvent leaving
+[2023-12-29 21:34:37.890] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.891] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.891] [000c]     Scheduling output: [Searching for host...]
+[2023-12-29 21:34:37.891] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.894] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:37.894] [000c]     Scheduling output: [Connecting to host...]
+[2023-12-29 21:34:37.894] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:37.898] [0001]   XML log file created
+[2023-12-29 21:34:37.899] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:37.900] [0001]     Opening log without write sharing
+[2023-12-29 21:34:37.901] [0001]     Opening log with write sharing
+[2023-12-29 21:34:37.901] [0001]     Log opened
+[2023-12-29 21:34:37.902] [0001]     Skipping 0 nodes
+[2023-12-29 21:34:37.902] [0001]     Read node 1: XmlDeclaration xml=version="1.0" encoding="UTF-8"
+[2023-12-29 21:34:37.902] [0001]     Log contents:
+<?xml version="1.0" encoding="UTF-8"?>
+<session xmlns="http://winscp.net/schema/session/1.0" name="pi@192.168.1.3" start="2023-12-30T05:34:37.890Z">
+
+[2023-12-29 21:34:37.902] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:37.902] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:37.902] [0001]     Read node 2: Whitespace 
+
+[2023-12-29 21:34:37.902] [0001]     Log contents has not changed
+[2023-12-29 21:34:37.902] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:37.903] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:37.903] [0001]     Read node 3: Element session
+[2023-12-29 21:34:37.903] [0001]     Log contents has not changed
+[2023-12-29 21:34:37.903] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:37.903] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:37.903] [0001]     Waiting for log update and dispatching events for 50
+[2023-12-29 21:34:37.904] [0001]     Output: [winscp> option batch on]
+[2023-12-29 21:34:37.904] [0001]     Output: [batch           on        ]
+[2023-12-29 21:34:37.904] [0001]     Output: [reconnecttime   120       ]
+[2023-12-29 21:34:37.904] [0001]     Output: [winscp> option confirm off]
+[2023-12-29 21:34:37.904] [0001]     Output: [confirm         off       ]
+[2023-12-29 21:34:37.904] [0001]     Output: [winscp> option reconnecttime 120]
+[2023-12-29 21:34:37.904] [0001]     Output: [reconnecttime   120       ]
+[2023-12-29 21:34:37.904] [0001]     Output: [winscp> open "sftp://pi:***@192.168.1.3:22" -hostkey="*" -timeout=15]
+[2023-12-29 21:34:37.904] [0001]     Output: [Searching for host...]
+[2023-12-29 21:34:37.904] [0001]     Output: [Connecting to host...]
+[2023-12-29 21:34:37.963] [0001]     Waiting for log update and dispatching events for 100
+[2023-12-29 21:34:38.034] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.034] [000c]     Scheduling output: [Authenticating...]
+[2023-12-29 21:34:38.034] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.034] [0001]     Output: [Authenticating...]
+[2023-12-29 21:34:38.034] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.034] [000c]     Scheduling output: [WARNING! Giving up security and accepting any host key as configured!]
+[2023-12-29 21:34:38.034] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.034] [0001]     Output: [WARNING! Giving up security and accepting any host key as configured!]
+[2023-12-29 21:34:38.036] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.036] [000c]     Scheduling output: [Using username "pi".]
+[2023-12-29 21:34:38.036] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.037] [0001]     Output: [Using username "pi".]
+[2023-12-29 21:34:38.044] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.045] [000c]     Scheduling output: [Authenticating with pre-entered password.]
+[2023-12-29 21:34:38.045] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.045] [0001]     Output: [Authenticating with pre-entered password.]
+[2023-12-29 21:34:38.070] [0001]     Waiting for log update and dispatching events for 200
+[2023-12-29 21:34:38.285] [0001]     Waiting for log update and dispatching events for 400
+[2023-12-29 21:34:38.504] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.504] [000c]     Scheduling output: [Authenticated.]
+[2023-12-29 21:34:38.504] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.504] [0001]     Output: [Authenticated.]
+[2023-12-29 21:34:38.504] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.504] [000c]     Scheduling output: [Starting the session...]
+[2023-12-29 21:34:38.504] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.504] [0001]     Output: [Starting the session...]
+[2023-12-29 21:34:38.520] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.520] [000c]     Scheduling output: [Session started.]
+[2023-12-29 21:34:38.520] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.520] [0001]     Output: [Session started.]
+[2023-12-29 21:34:38.521] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.521] [000c]     Scheduling output: [Active session: [1] pi@192.168.1.3]
+[2023-12-29 21:34:38.521] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.521] [0001]     Output: [Active session: [1] pi@192.168.1.3]
+[2023-12-29 21:34:38.521] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.521] [000c]     ExeSessionProcess.ProcessTitleEvent entering
+[2023-12-29 21:34:38.521] [000c]       Not-supported title event [pi@192.168.1.3 – WinSCP]
+[2023-12-29 21:34:38.522] [000c]     ExeSessionProcess.ProcessTitleEvent leaving
+[2023-12-29 21:34:38.522] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.522] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.522] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.522] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.522] [000c]     ExeSessionProcess.ProcessInputEvent entering
+[2023-12-29 21:34:38.686] [0001]     Read node 4: Whitespace 
+  
+[2023-12-29 21:34:38.686] [0001]     Log contents:
+<?xml version="1.0" encoding="UTF-8"?>
+<session xmlns="http://winscp.net/schema/session/1.0" name="pi@192.168.1.3" start="2023-12-30T05:34:37.890Z">
+  <group name="open sftp://pi:***@192.168.1.3:22 -hostkey=&quot;*&quot; -timeout=15" start="2023-12-30T05:34:38.520Z">
+  </group>
+
+[2023-12-29 21:34:38.687] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.688] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.688] [0001]     Read node 5: Element group
+[2023-12-29 21:34:38.689] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.689] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.690] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.690] [0001]     Read node 6: Whitespace 
+  
+[2023-12-29 21:34:38.691] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.691] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.691] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.691] [0001]     Read node 7: EndElement group
+[2023-12-29 21:34:38.691] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.691] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.692] [0001]   ElementLogReader.Dispose(group@1) entering
+[2023-12-29 21:34:38.692] [0001]     ElementLogReader.ReadToEnd(group@1) entering
+[2023-12-29 21:34:38.692] [0001]     ElementLogReader.ReadToEnd(group@1) leaving
+[2023-12-29 21:34:38.692] [0001]   ElementLogReader.Dispose(group@1) leaving
+[2023-12-29 21:34:38.692] [0001]   Command: [pwd]
+[2023-12-29 21:34:38.692] [0001]   ExeSessionProcess.ExecuteCommand entering
+[2023-12-29 21:34:38.692] [0001]   ExeSessionProcess.ExecuteCommand leaving
+[2023-12-29 21:34:38.692] [000c]       Scheduling output: [winscp> pwd]
+[2023-12-29 21:34:38.692] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.692] [000c]     ExeSessionProcess.ProcessInputEvent leaving
+[2023-12-29 21:34:38.692] [0001]     Waiting for log update and dispatching events for 50
+[2023-12-29 21:34:38.692] [0001]     Output: [winscp> pwd]
+[2023-12-29 21:34:38.692] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.693] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.693] [000c]     Scheduling output: [/home/pi]
+[2023-12-29 21:34:38.693] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.693] [0001]     Output: [/home/pi]
+[2023-12-29 21:34:38.693] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.693] [000c]     ExeSessionProcess.ProcessTitleEvent entering
+[2023-12-29 21:34:38.693] [000c]       Not-supported title event [pi@192.168.1.3 – WinSCP]
+[2023-12-29 21:34:38.693] [000c]     ExeSessionProcess.ProcessTitleEvent leaving
+[2023-12-29 21:34:38.693] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.693] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.693] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.693] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.693] [000c]     ExeSessionProcess.ProcessInputEvent entering
+[2023-12-29 21:34:38.743] [0001]     Read node 8: Whitespace 
+  
+[2023-12-29 21:34:38.743] [0001]     Log contents:
+<?xml version="1.0" encoding="UTF-8"?>
+<session xmlns="http://winscp.net/schema/session/1.0" name="pi@192.168.1.3" start="2023-12-30T05:34:37.890Z">
+  <group name="open sftp://pi:***@192.168.1.3:22 -hostkey=&quot;*&quot; -timeout=15" start="2023-12-30T05:34:38.520Z">
+  </group>
+  <group name="pwd" start="2023-12-30T05:34:38.692Z">
+    <cwd>
+      <cwd value="/home/pi" />
+      <result success="true" />
+    </cwd>
+  </group>
+
+[2023-12-29 21:34:38.743] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.744] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.744] [0001]     Read node 9: Element group
+[2023-12-29 21:34:38.744] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.744] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.744] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.744] [0001]     Read node 10: Whitespace 
+    
+[2023-12-29 21:34:38.744] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.744] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.744] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.744] [0001]     Read node 11: Element cwd
+[2023-12-29 21:34:38.744] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.744] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.744] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.744] [0001]     Read node 12: Whitespace 
+      
+[2023-12-29 21:34:38.744] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.744] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.745] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.745] [0001]     Read node 13: Element cwd
+[2023-12-29 21:34:38.745] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.745] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.745] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.745] [0001]     Read node 14: Whitespace 
+      
+[2023-12-29 21:34:38.745] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.745] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.745] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.745] [0001]     Read node 15: Element result
+[2023-12-29 21:34:38.745] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.745] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.745] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.745] [0001]     Read node 16: Whitespace 
+    
+[2023-12-29 21:34:38.745] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.745] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.746] [0001]   SessionLogReader.Read entering
+[2023-12-29 21:34:38.746] [0001]     Read node 17: EndElement cwd
+[2023-12-29 21:34:38.746] [0001]     Log contents has not changed
+[2023-12-29 21:34:38.746] [0001]   SessionLogReader.Read leaving
+[2023-12-29 21:34:38.746] [0001]   ElementLogReader.ReadToEnd(group@1) entering
+[2023-12-29 21:34:38.746] [0001]     SessionLogReader.Read entering
+[2023-12-29 21:34:38.746] [0001]       Read node 18: Whitespace 
+  
+[2023-12-29 21:34:38.746] [0001]       Log contents has not changed
+[2023-12-29 21:34:38.746] [0001]     SessionLogReader.Read leaving
+[2023-12-29 21:34:38.746] [0001]     SessionLogReader.Read entering
+[2023-12-29 21:34:38.746] [0001]       Read node 19: EndElement group
+[2023-12-29 21:34:38.746] [0001]       Log contents has not changed
+[2023-12-29 21:34:38.746] [0001]     SessionLogReader.Read leaving
+[2023-12-29 21:34:38.746] [0001]   ElementLogReader.ReadToEnd(group@1) leaving
+[2023-12-29 21:34:38.746] [0001]   ElementLogReader.Dispose(cwd@2) entering
+[2023-12-29 21:34:38.746] [0001]     ElementLogReader.ReadToEnd(cwd@2) entering
+[2023-12-29 21:34:38.746] [0001]     ElementLogReader.ReadToEnd(cwd@2) leaving
+[2023-12-29 21:34:38.746] [0001]   ElementLogReader.Dispose(cwd@2) leaving
+[2023-12-29 21:34:38.746] [0001]   ElementLogReader.Dispose(group@1) entering
+[2023-12-29 21:34:38.746] [0001]     ElementLogReader.ReadToEnd(group@1) entering
+[2023-12-29 21:34:38.747] [0001]     ElementLogReader.ReadToEnd(group@1) leaving
+[2023-12-29 21:34:38.747] [0001]   ElementLogReader.Dispose(group@1) leaving
+[2023-12-29 21:34:38.747] [0001] Session.Open leaving
+[2023-12-29 21:34:38.747] [0001] Session.GetFiles entering
+[2023-12-29 21:34:38.748] [0001]   Session.DoGetFiles entering
+[2023-12-29 21:34:38.749] [0001]     Command: [get  -nopermissions -preservetime -transfer="binary"  -- "/home/pi/go/code_go/go_executables/p1_tcp/images/*" "C:\Users\Alienware\Desktop\FlightSimImageTest\Images\"]
+[2023-12-29 21:34:38.749] [0001]     ExeSessionProcess.ExecuteCommand entering
+[2023-12-29 21:34:38.749] [0001]     ExeSessionProcess.ExecuteCommand leaving
+[2023-12-29 21:34:38.749] [000c]       Scheduling output: [winscp> get  -nopermissions -preservetime -transfer="binary"  -- "/home/pi/go/code_go/go_executables/p1_tcp/images/*" "C:\Users\Alienware\Desktop\FlightSimImageTest\Images\"]
+[2023-12-29 21:34:38.749] [000c]     ExeSessionProcess.ProcessInputEvent leaving
+[2023-12-29 21:34:38.749] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.750] [0001]     SessionLogReader.Read entering
+[2023-12-29 21:34:38.751] [0001]       Read node 20: Whitespace 
+  
+[2023-12-29 21:34:38.751] [0001]       Log contents:
+<?xml version="1.0" encoding="UTF-8"?>
+<session xmlns="http://winscp.net/schema/session/1.0" name="pi@192.168.1.3" start="2023-12-30T05:34:37.890Z">
+  <group name="open sftp://pi:***@192.168.1.3:22 -hostkey=&quot;*&quot; -timeout=15" start="2023-12-30T05:34:38.520Z">
+  </group>
+  <group name="pwd" start="2023-12-30T05:34:38.692Z">
+    <cwd>
+      <cwd value="/home/pi" />
+      <result success="true" />
+    </cwd>
+  </group>
+  <group name="get  -nopermissions -preservetime -transfer=&quot;binary&quot;  -- &quot;/home/pi/go/code_go/go_executables/p1_tcp/images/*&quot; &quot;C:\Users\Alienware\Desktop\FlightSimImageTest\Images\&quot;" start="2023-12-30T05:34:38.749Z">
+
+[2023-12-29 21:34:38.751] [0001]     SessionLogReader.Read leaving
+[2023-12-29 21:34:38.751] [0001]     SessionLogReader.Read entering
+[2023-12-29 21:34:38.751] [0001]       Read node 21: Element group
+[2023-12-29 21:34:38.751] [0001]       Log contents has not changed
+[2023-12-29 21:34:38.751] [0001]     SessionLogReader.Read leaving
+[2023-12-29 21:34:38.752] [0001]     Session.CreateProgressHandler entering
+[2023-12-29 21:34:38.752] [0001]     Session.CreateProgressHandler leaving
+[2023-12-29 21:34:38.752] [0001]     SessionLogReader.Read entering
+[2023-12-29 21:34:38.752] [0001]       Waiting for log update and dispatching events for 50
+[2023-12-29 21:34:38.752] [0001]       Output: [winscp> get  -nopermissions -preservetime -transfer="binary"  -- "/home/pi/go/code_go/go_executables/p1_tcp/images/*" "C:\Users\Alienware\Desktop\FlightSimImageTest\Images\"]
+[2023-12-29 21:34:38.757] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.757] [000c]     Scheduling output: [No file matching '*' found.]
+[2023-12-29 21:34:38.757] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.757] [0001]       Output: [No file matching '*' found.]
+[2023-12-29 21:34:38.757] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.757] [000c]     ExeSessionProcess.ProcessTitleEvent entering
+[2023-12-29 21:34:38.757] [000c]       Not-supported title event [pi@192.168.1.3 – WinSCP]
+[2023-12-29 21:34:38.757] [000c]     ExeSessionProcess.ProcessTitleEvent leaving
+[2023-12-29 21:34:38.757] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.757] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.757] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.757] [000c]   ExeSessionProcess.ProcessEvent entering
+[2023-12-29 21:34:38.757] [000c]     ExeSessionProcess.ProcessInputEvent entering
+[2023-12-29 21:34:38.803] [0001]       Read node 22: Whitespace 
+  
+[2023-12-29 21:34:38.803] [0001]       Log contents:
+<?xml version="1.0" encoding="UTF-8"?>
+<session xmlns="http://winscp.net/schema/session/1.0" name="pi@192.168.1.3" start="2023-12-30T05:34:37.890Z">
+  <group name="open sftp://pi:***@192.168.1.3:22 -hostkey=&quot;*&quot; -timeout=15" start="2023-12-30T05:34:38.520Z">
+  </group>
+  <group name="pwd" start="2023-12-30T05:34:38.692Z">
+    <cwd>
+      <cwd value="/home/pi" />
+      <result success="true" />
+    </cwd>
+  </group>
+  <group name="get  -nopermissions -preservetime -transfer=&quot;binary&quot;  -- &quot;/home/pi/go/code_go/go_executables/p1_tcp/images/*&quot; &quot;C:\Users\Alienware\Desktop\FlightSimImageTest\Images\&quot;" start="2023-12-30T05:34:38.749Z">
+  </group>
+
+[2023-12-29 21:34:38.803] [0001]     SessionLogReader.Read leaving
+[2023-12-29 21:34:38.803] [0001]     SessionLogReader.Read entering
+[2023-12-29 21:34:38.803] [0001]       Read node 23: EndElement group
+[2023-12-29 21:34:38.803] [0001]       Log contents has not changed
+[2023-12-29 21:34:38.803] [0001]     SessionLogReader.Read leaving
+[2023-12-29 21:34:38.804] [0001]     ProgressHandler.Dispose entering
+[2023-12-29 21:34:38.804] [0001]       Session.DisableProgressHandling entering
+[2023-12-29 21:34:38.804] [0001]       Session.DisableProgressHandling leaving
+[2023-12-29 21:34:38.804] [0001]     ProgressHandler.Dispose leaving
+[2023-12-29 21:34:38.804] [0001]     ElementLogReader.Dispose(group@1) entering
+[2023-12-29 21:34:38.804] [0001]       ElementLogReader.ReadToEnd(group@1) entering
+[2023-12-29 21:34:38.804] [0001]       ElementLogReader.ReadToEnd(group@1) leaving
+[2023-12-29 21:34:38.804] [0001]     ElementLogReader.Dispose(group@1) leaving
+[2023-12-29 21:34:38.804] [0001]   Session.DoGetFiles leaving
+[2023-12-29 21:34:38.804] [0001] Session.GetFiles leaving
+[2023-12-29 21:34:38.810] [0001] Session.Dispose entering
+[2023-12-29 21:34:38.810] [0001]   Session.Cleanup entering
+[2023-12-29 21:34:38.810] [0001]     Terminating process
+[2023-12-29 21:34:38.810] [0001]     Command: [exit]
+[2023-12-29 21:34:38.810] [0001]     ExeSessionProcess.ExecuteCommand entering
+[2023-12-29 21:34:38.810] [0001]     ExeSessionProcess.ExecuteCommand leaving
+[2023-12-29 21:34:38.810] [000c]       Scheduling output: [winscp> exit]
+[2023-12-29 21:34:38.810] [000c]     ExeSessionProcess.ProcessInputEvent leaving
+[2023-12-29 21:34:38.810] [000c]   ExeSessionProcess.ProcessEvent leaving
+[2023-12-29 21:34:38.810] [0001]     ExeSessionProcess.Close entering
+[2023-12-29 21:34:38.810] [0001]       Waiting for process to exit (2000 ms)
+[2023-12-29 21:34:38.894] [0001]     ExeSessionProcess.Close leaving
+[2023-12-29 21:34:38.895] [0001]     ExeSessionProcess.Dispose entering
+[2023-12-29 21:34:38.910] [000c]   Aborted
+[2023-12-29 21:34:38.910] [000c] ExeSessionProcess.ProcessEvents leaving
+[2023-12-29 21:34:38.914] [0001]       Closing job
+[2023-12-29 21:34:38.914] [0001]     ExeSessionProcess.Dispose leaving
+[2023-12-29 21:34:38.914] [0001]     Disposing log readers
+[2023-12-29 21:34:38.915] [0001]     SessionElementLogReader.Dispose entering
+[2023-12-29 21:34:38.915] [0001]       ElementLogReader.Dispose(session@0) entering
+[2023-12-29 21:34:38.915] [0001]         ElementLogReader.ReadToEnd(session@0) entering
+[2023-12-29 21:34:38.915] [0001]           SessionLogReader.Read entering
+[2023-12-29 21:34:38.915] [0001]             Read node 24: Whitespace 
+  
+[2023-12-29 21:34:38.915] [0001]             Log contents:
+<?xml version="1.0" encoding="UTF-8"?>
+<session xmlns="http://winscp.net/schema/session/1.0" name="pi@192.168.1.3" start="2023-12-30T05:34:37.890Z">
+  <group name="open sftp://pi:***@192.168.1.3:22 -hostkey=&quot;*&quot; -timeout=15" start="2023-12-30T05:34:38.520Z">
+  </group>
+  <group name="pwd" start="2023-12-30T05:34:38.692Z">
+    <cwd>
+      <cwd value="/home/pi" />
+      <result success="true" />
+    </cwd>
+  </group>
+  <group name="get  -nopermissions -preservetime -transfer=&quot;binary&quot;  -- &quot;/home/pi/go/code_go/go_executables/p1_tcp/images/*&quot; &quot;C:\Users\Alienware\Desktop\FlightSimImageTest\Images\&quot;" start="2023-12-30T05:34:38.749Z">
+  </group>
+  <group name="exit" start="2023-12-30T05:34:38.810Z">
+  </group>
+</session>
+
+[2023-12-29 21:34:38.915] [0001]           SessionLogReader.Read leaving
+[2023-12-29 21:34:38.915] [0001]           SessionLogReader.Read entering
+[2023-12-29 21:34:38.915] [0001]             Read node 25: Element group
+[2023-12-29 21:34:38.915] [0001]             Log contents has not changed
+[2023-12-29 21:34:38.915] [0001]           SessionLogReader.Read leaving
+[2023-12-29 21:34:38.915] [0001]           SessionLogReader.Read entering
+[2023-12-29 21:34:38.915] [0001]             Read node 26: Whitespace 
+  
+[2023-12-29 21:34:38.915] [0001]             Log contents has not changed
+[2023-12-29 21:34:38.915] [0001]           SessionLogReader.Read leaving
+[2023-12-29 21:34:38.916] [0001]           SessionLogReader.Read entering
+[2023-12-29 21:34:38.916] [0001]             Read node 27: EndElement group
+[2023-12-29 21:34:38.916] [0001]             Log contents has not changed
+[2023-12-29 21:34:38.916] [0001]           SessionLogReader.Read leaving
+[2023-12-29 21:34:38.916] [0001]           SessionLogReader.Read entering
+[2023-12-29 21:34:38.916] [0001]             Read node 28: Whitespace 
+
+[2023-12-29 21:34:38.916] [0001]             Log contents has not changed
+[2023-12-29 21:34:38.916] [0001]           SessionLogReader.Read leaving
+[2023-12-29 21:34:38.916] [0001]           SessionLogReader.Read entering
+[2023-12-29 21:34:38.916] [0001]             Read node 29: EndElement session
+[2023-12-29 21:34:38.916] [0001]             Log contents has not changed
+[2023-12-29 21:34:38.916] [0001]           SessionLogReader.Read leaving
+[2023-12-29 21:34:38.916] [0001]         ElementLogReader.ReadToEnd(session@0) leaving
+[2023-12-29 21:34:38.916] [0001]       ElementLogReader.Dispose(session@0) leaving
+[2023-12-29 21:34:38.916] [0001]     SessionElementLogReader.Dispose leaving
+[2023-12-29 21:34:38.916] [0001]     SessionLogReader.Dispose entering
+[2023-12-29 21:34:38.916] [0001]       Log contents has not changed
+[2023-12-29 21:34:38.916] [0001]       Closing log
+[2023-12-29 21:34:38.917] [0001]     SessionLogReader.Dispose leaving
+[2023-12-29 21:34:38.917] [0001]     Deleting XML log file [C:\Users\Alienware\AppData\Local\Temp\wscp2A30.0112F14F.tmp]
+[2023-12-29 21:34:38.917] [0001]   Session.Cleanup leaving

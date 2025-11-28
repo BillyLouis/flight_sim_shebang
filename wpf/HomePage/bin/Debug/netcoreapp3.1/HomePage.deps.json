@@ -1,0 +1,87 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "HomePage/1.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "7.0.0",
+          "WinSCP": "6.1.2",
+          "WriteableBitmapEx": "1.6.8",
+          "JoystickLibrarySharp": "0.0.0.0"
+        },
+        "runtime": {
+          "HomePage.dll": {}
+        }
+      },
+      "System.Drawing.Common/7.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "WinSCP/6.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/WinSCPnet.dll": {
+            "assemblyVersion": "1.14.0.13797",
+            "fileVersion": "1.14.0.13797"
+          }
+        }
+      },
+      "WriteableBitmapEx/1.6.8": {
+        "runtime": {
+          "lib/netcoreapp3.0/WriteableBitmapEx.Wpf.dll": {
+            "assemblyVersion": "1.6.8.0",
+            "fileVersion": "1.6.8.0"
+          }
+        }
+      },
+      "JoystickLibrarySharp/0.0.0.0": {
+        "runtime": {
+          "JoystickLibrarySharp.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HomePage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Drawing.Common/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KIX+oBU38pxkKPxvLcLfIkOV5Ien8ReN78wro7OF5/erwcmortzeFx+iBswlh2Vz6gVne0khocQudGwaO1Ey6A==",
+      "path": "system.drawing.common/7.0.0",
+      "hashPath": "system.drawing.common.7.0.0.nupkg.sha512"
+    },
+    "WinSCP/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GS9S2FA3GVpoBkKJq/6T63VLg38qQBo9PvSZ+jYrZ47f0YrmUMLJvBmoDteBZL7e5wkDW52C+BCQzqf1M3bWrA==",
+      "path": "winscp/6.1.2",
+      "hashPath": "winscp.6.1.2.nupkg.sha512"
+    },
+    "WriteableBitmapEx/1.6.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DmMeRt3Zr+xu21U9uY9baniMlX86nSKRBoUvFXZilsk553Him37OX04nE2ctJtPHONbVD/iB1dsIfQx+r1LH0Q==",
+      "path": "writeablebitmapex/1.6.8",
+      "hashPath": "writeablebitmapex.1.6.8.nupkg.sha512"
+    },
+    "JoystickLibrarySharp/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
